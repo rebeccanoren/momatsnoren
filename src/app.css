@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+	--Abhaya: font-family: 'Abhaya Libre', serif;
+	--beige: #FAF8EF;
+	--salmon: #F4A89A;
+	--saturated-salmon: #F16C5B;
+	--secondary-color: #182F97;
+	--pure-white: #ffffff;
+	--heading-color: rgba(0, 0, 0, 0.7);
+	--text-color: #1a1a1c;
+	--blue: #182F97;
+	--dark-blue: #1C2A6D;
+	--yellow: #FFE699;
+	--background-without-opacity: rgba(255, 255, 255, 0.7);
+	--dark: #080808;
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+}
+
+
+.blue {
+	color: var(--dark-blue);
+}
+
+h1 {
+	font-size: 48px;
+	width: 100%;
+	font-weight: 300;
+	letter-spacing: 6px;
+	margin: 20px 0 0 0;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+	scroll-behavior: smooth;
+
+}
+
+html body {
+    margin: 0;
+    width: 100%;
+	font-family: 'Playfair Display', serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+}
+html body #svelte {
+
+    width: 100%;
+	
+}
+
+div {
+    color: var(--text-color);
+}
+
+a {
+	color: var(--secondary-color);
+	font-weight: 400;
+	font-size: 16px;
+}
+
+a:visited, a:hover {
+	color: var(--secondary-color);
+}
+
+.illustration {
+	max-width: 300px;
+}
+
+
+.primary {
+	background-color: var(--beige);
+}
+
+.salmon-background {
+	background-color: var(--salmon);
+}
+
+.yellow-background {
+	background-color: var(--yellow);
+}
+
+.blue-background {
+	background-color: var(--blue);
+}
+
+.dark-blue-background {
+	background-color: var(--dark-blue);
+}
+
+.white-background {
+	background-color: var(--pure-white);
+}
+
+button {
+		margin: 6px 4px 8px 4px;
+		border-radius: 60px;
+		font-size: 14px;
+		background-color: var(--blue);
+		color: var(--pure-white);
+		padding: 12px 14px;
+		cursor: pointer;
+		border: none;
+		vertical-align:middle;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+	/* Styling for images */
+	.image {
+		max-width: 350px; 
+		width: 100%;
+		border-radius: 20px;
+		height: auto;
+		margin: 0 auto;
+	  }
+	
+	  /* Styling for illustrations */
+	  .illustration {
+		max-width: 500px;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 0;
+	  }
+
+
+@media only screen and (max-width: 799px) {
+	h1 {
+		font-size: 28px;
+		margin: 0;
+		letter-spacing: 1px;
+		color: var(--blue)
+	}
+
+	.primary-section {
+		max-width: 350px;
+	}
+
+}
