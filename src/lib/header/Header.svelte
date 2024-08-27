@@ -117,7 +117,7 @@
 		display: flex;
 		justify-content: space-between;
 		text-align: left;
-		padding: 32px 16px 8px 16px;
+		padding: 16px 16px 8px 16px;
 		width: 100vw;
 	  }
 	}

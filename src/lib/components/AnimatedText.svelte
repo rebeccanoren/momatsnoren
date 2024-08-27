@@ -4,12 +4,11 @@
   export let content = ""; // Prop for paragraph
 
   let visibility = 0; // Track visibility percentage (intersectionRatio)
-  let previousVisibility = 0; // Track previous visibility to detect scroll direction
+  let hasReachedFinalPosition = false; // Track if the element has reached translateY(0px)
 
-  // Custom function to calculate opacity based on visibility (fades out even faster)
+  // Function to calculate opacity based on visibility, fading out faster
   function calculateOpacity(visibility) {
-    // Apply cubic scaling to visibility to decrease opacity even faster
-    return Math.pow(visibility, 8); // Cubic scaling makes it fade out aggressively
+    return Math.pow(visibility, 3); // Cubing visibility to make it fade out faster
   }
 
   // Function to observe element visibility using IntersectionObserver
@@ -17,14 +16,14 @@
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          previousVisibility = visibility; // Store previous visibility
-          visibility = entry.intersectionRatio;
+          // Only update if the element hasn't reached its final position
+          if (!hasReachedFinalPosition) {
+            visibility = entry.intersectionRatio; // Update visibility
 
-          // Check if the element is becoming more visible (scrolling in from the bottom)
-          if (visibility > previousVisibility) {
-            node.classList.add('slide-up-opacity'); // Apply slide up and fade in
-          } else {
-            node.classList.remove('slide-up-opacity'); // Only fade out (no sliding)
+            // If visibility is 1 (fully visible), mark as reached final position
+            if (visibility >= 1) {
+              hasReachedFinalPosition = true;
+            }
           }
         });
       },
@@ -42,7 +41,13 @@
 </script>
 
 <div class="wrapper" use:observe>
-  <div class="box" style="opacity: {calculateOpacity(visibility)}">
+  <div
+    class="box"
+    style="
+      opacity: {calculateOpacity(visibility)};
+      transform: translateY({hasReachedFinalPosition ? 0 : 50 * (1 - visibility)}px);
+    "
+  >
     <h3>{subtitle}</h3>
     <h2>{title}</h2>
     <p>{content}</p>
@@ -57,13 +62,7 @@
   .box {
     margin: auto;
     opacity: 0; /* Start hidden */
-    transform: translateY(0); /* Default transform */
-    transition: opacity 0.2s ease, transform 0.5s ease; /* Faster opacity transition */
-  }
-
-  /* Slide up and fade in when the element is becoming visible (from the bottom) */
-  .slide-up-opacity {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Slide up to its original position */
+    transform: translateY(50px); /* Start below by 50px */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth opacity and translate transition */
   }
 </style>

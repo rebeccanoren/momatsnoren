@@ -50,8 +50,16 @@
   .flying-image-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: -60px;
+  }
+
+  .flying-image-container img:first-child {
+    transform: rotate(-4deg);
+  }
+
+  .flying-image-container img:nth-child(2) {
+    transform: rotate(5deg);
   }
 
   .flying-image {
