@@ -1,10 +1,8 @@
 <script>
 
 	import NavigationLinks from '$lib/header/NavigationLinksMenu.svelte';
-	export let closeMenu; // Function to close the menu
-	let menuicon = '/menu.svg';
+	export let closeMenu;
 	let close = '/close.svg';
-	let closeDark = '/close-dark.svg';
 	
 	
   </script>

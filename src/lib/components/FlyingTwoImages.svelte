@@ -2,11 +2,11 @@
   import { onMount, onDestroy } from "svelte";
 
   export let src1 = ""; // Path to the first image
-  export let alt1 = "First Image"; // Alt text for the first image
+  export let alt1 = ""; // Alt text for the first image
   export let imageClass1 = ""; // Class for the first image
 
   export let src2 = ""; // Path to the second image
-  export let alt2 = "Second Image"; // Alt text for the second image
+  export let alt2 = ""; // Alt text for the second image
   export let imageClass2 = ""; // Class for the second image
 
   let scrollY = 0; // Current scroll position
@@ -15,7 +15,7 @@
 
   // Function to calculate transformation for the first image based on scroll
   const calculateTransform1 = () => {
-    const translateY1 = scrollY * -0.125; // Adjust for Y movement
+    const translateY1 = scrollY * -0.125 ; // Adjust for Y movement
     const rotateDeg1 = scrollY * 0.015; // Adjust rotation factor
     transform1 = `translate3d(0px, ${translateY1}%, 0px) rotate(${rotateDeg1}deg)`;
   };
@@ -50,7 +50,8 @@
   .flying-image-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adjust spacing between the images */
+    gap: 10px;
+    margin-bottom: -60px;
   }
 
   .flying-image {
@@ -59,13 +60,17 @@
   }
 
   @media only screen and (max-width: 799px) {
+    .flying-image-container {
+    gap: 0px;
+  }
+
 	  .flying-image  {
 		max-width: 200px;
 	}}
 
   @media only screen and (max-width: 399px) {
 	  .flying-image  {
-		max-width: 150px;
+		max-width: 120px;
     border-radius: 12px;
 	}
 
