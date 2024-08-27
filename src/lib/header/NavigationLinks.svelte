@@ -82,7 +82,8 @@
 	  justify-content: flex-start; /* Align items to the start */
 	  gap: 16px; /* Small gap between items */
 	  align-items: center;
-	  padding: 40px;
+	  padding: 40px 0;
+	  overflow: hidden;
 	}
 
 	:global(.active) {

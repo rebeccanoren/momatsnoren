@@ -37,13 +37,37 @@
     .flying-svg-container {
       display: flex;
       justify-content: center;
-      margin: -100px;
+      margin: -80px;
     }
   
     .flying-svg {
       transform-origin: bottom;
       transition: transform 0.1s ease-out;
     }
+
+     /* Styling for illustrations */
+	  .illustration {
+		max-width: 500px;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 0;
+	  }
+
+    @media only screen and (max-width: 799px) {
+	  .flying-svg  {
+		max-width: 300px;
+	}
+
+  @media only screen and (max-width: 399px) {
+    .flying-svg {
+		max-width: 300px;
+    overflow: hidden;
+	}}
+
+  
+    }
+
   </style>
   
   <div class="flying-svg-container">

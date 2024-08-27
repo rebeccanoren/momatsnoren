@@ -128,15 +128,7 @@ button {
 		margin: 0 auto;
 	  }
 	
-	  /* Styling for illustrations */
-	  .illustration {
-		max-width: 500px;
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		border-radius: 0;
-	  }
-
+	 
 @media only screen and (max-width: 799px) {
 	h1 {
 		font-size: 28px;

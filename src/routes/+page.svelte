@@ -66,7 +66,7 @@
   <div class="content-wrapper dark-blue-background">
     <div class="top-background border-radius white-background"></div>
     <div class="square-background white-background">
-      <div class="content content-overlap">
+      <div class="content content-overlap white-background">
         <div class="content-illustration">
           <FlyingImage src="kosterskyrka.png" alt="Kosters Kyrka" imageClass="illustration" /> 
         </div>
