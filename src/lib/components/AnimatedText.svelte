@@ -6,9 +6,9 @@
   let visibility = 0; // Track visibility percentage (intersectionRatio)
   let hasReachedFinalPosition = false; // Track if the element has reached translateY(0px)
 
-  // Function to calculate opacity based on visibility, fading out faster
+  // Function to calculate opacity based on visibility
   function calculateOpacity(visibility) {
-    return Math.pow(visibility, 3); // Cubing visibility to make it fade out faster
+    return Math.pow(visibility, 10); // Cubing visibility to make it fade out faster
   }
 
   // Function to observe element visibility using IntersectionObserver
@@ -16,18 +16,15 @@
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Only update if the element hasn't reached its final position
-          if (!hasReachedFinalPosition) {
-            visibility = entry.intersectionRatio; // Update visibility
+          visibility = entry.intersectionRatio; // Update visibility
 
-            // If visibility is 1 (fully visible), mark as reached final position
-            if (visibility >= 1) {
-              hasReachedFinalPosition = true;
-            }
+          // Fix the element's position once it reaches translateY(0px)
+          if (entry.isIntersecting && entry.intersectionRatio >= 1) {
+            hasReachedFinalPosition = true;
           }
         });
       },
-      { threshold: Array.from({ length: 101 }, (_, i) => i * 0.01) } // Creates an array of thresholds from 0 to 1 (0%, 1%, ..., 100%)
+      { threshold: Array.from({ length: 101 }, (_, i) => i * 0.01) } // Thresholds from 0 to 1 (0%, 1%, ..., 100%)
     );
 
     observer.observe(node);
@@ -63,6 +60,6 @@
     margin: auto;
     opacity: 0; /* Start hidden */
     transform: translateY(50px); /* Start below by 50px */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth opacity and translate transition */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth opacity and transform transition */
   }
 </style>
