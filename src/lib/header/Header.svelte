@@ -5,66 +5,83 @@
 	import NavigationLinks from '$lib/header/NavigationLinks.svelte';
 	import Menu from '$lib/header/Menu.svelte';
 	import Music from '$lib/header/Music.svelte';
-
+  
 	let y = 0;
-</script>
   
-<svelte:window bind:scrollY={y} />
+	let isSchemaPage = false;
   
-<header>
-  <nav>
-    {#if y > 250}
-      <div class="fixed-nav" transition:slide>
-        <div>
-          <h1>Henrik & Rebecca</h1>
-          <p>9 augusti, 2025</p>
-          <button on:click={openMenu}><img src="/menu.svg" alt="Open Menu" /></button>
-
-          {#if $isMenuOpen}
-            <!-- Wrap Menu in a div and apply transition to this div -->
-            <div transition:fade={{ duration: 300 }}>
-              <Menu {closeMenu} />
-            </div>
-          {/if}
-
-          <!-- Pass menu state to Music component -->
-          <div class="music-container { $isMenuOpen ? 'slide-left' : ''}">
-            <Music />
-          </div>
-        </div>
-      </div>
-    {/if}
-
-    <h1>Henrik & Rebecca</h1>
-    <p>9 augusti, 2025 • Ekenäs, Sydkoster</p>
-
-    <div class="music-container { $isMenuOpen ? 'slide-left' : ''}">
-      <Music />
-    </div>
-    
-    <NavigationLinks />
-  </nav>
-</header>
+	// Update the flag based on the current path
+	$: isSchemaPage = $page.url.pathname === '/schema';
+  </script>
+	
+  <svelte:window bind:scrollY={y} />
+	
+  <header class:is-schema={isSchemaPage}>
+	<nav>
+	  {#if y > 250}
+		<div class="fixed-nav" class:is-schema={isSchemaPage} transition:slide>
+		  <div>
+			<h1>Henrik & Rebecca</h1>
+			<p>9 augusti, 2025</p>
+			<button on:click={openMenu}><img src="/menu.svg" alt="Open Menu" /></button>
   
-<style>
+			{#if $isMenuOpen}
+			  <!-- Wrap Menu in a div and apply transition to this div -->
+			  <div transition:fade={{ duration: 300 }}>
+				<Menu {closeMenu} />
+			  </div>
+			{/if}
+  
+			<!-- Pass menu state to Music component -->
+			<div class="music-container { $isMenuOpen ? 'slide-left' : ''}">
+			  <Music />
+			</div>
+		  </div>
+		</div>
+	  {/if}
+  
+	  <h1>Henrik & Rebecca</h1>
+	  <p>9 augusti, 2025 • Ekenäs, Sydkoster</p>
+  
+	  <div class="music-container { $isMenuOpen ? 'slide-left' : ''}">
+		<Music />
+	  </div>
+	  
+	  <NavigationLinks />
+	</nav>
+  </header>
+	
+  <style>
 	header {
 	  width: 100%;
 	  background-color: var(--beige);
 	  z-index: 999;
+	  transition: background-color 0.3s ease, color 0.3s ease;
 	}
   
+	header.is-schema {
+	  background-color: var(--dark-blue);
+	  color: white;
+	}
+	
 	nav {
 	  display: flex;
 	  flex-direction: column;
 	  align-items: center;
 	  text-align: center;
 	  max-width: 100%;
+	  color: inherit;
 	}
-  
+	
 	nav h1 {
-	  color: var(--blue);
+	  color: var(--dark-blue);
 	}
   
+	header.is-schema nav h1,
+	header.is-schema nav p {
+	  color: white;
+	}
+	
 	.fixed-nav {
 	  position: fixed;
 	  background-color: var(--beige);
@@ -73,8 +90,14 @@
 	  width: 100vw;
 	  padding: 16px;
 	  box-sizing: border-box;
+	  transition: background-color 0.3s ease, color 0.3s ease;
 	}
   
+	.fixed-nav.is-schema {
+	  background-color: var(--dark-blue);
+	  color: white;
+	}
+	
 	.fixed-nav h1 {
 	  color: var(--blue);
 	  font-size: 22px;
@@ -82,21 +105,29 @@
 	  letter-spacing: 1px;
 	}
   
+	.fixed-nav.is-schema h1 {
+	  color: white;
+	}
+	
 	.fixed-nav p {
 	  font-size: 14px;
 	  margin: 0;
 	}
-
-	button {
-		position: absolute;
-		right: 24px;
-		top: 16px;
-		height: 38px;
-		width: 38px;
+  
+	.fixed-nav.is-schema p {
+	  color: white;
 	}
-
+  
+	button {
+	  position: absolute;
+	  right: 32px;
+	  top: 16px;
+	  height: 38px;
+	  width: 38px;
+	}
+  
 	img {
-		color: var(--pure-white);
+	  color: var(--pure-white);
 	}
   
 	@media only screen and (max-width: 799px) {
@@ -121,4 +152,5 @@
 		width: 100vw;
 	  }
 	}
-</style>
+  </style>
+  

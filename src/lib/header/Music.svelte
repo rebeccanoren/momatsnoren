@@ -8,7 +8,7 @@
 	let innerWidth = 0; // Track window width, initialized to 0 for SSR
 
 	// Dynamically update the icon based on scroll position and music play state
-	$: currentIcon = y > 250 
+	$: currentIcon = y > 150 
 		? ($isPlaying ? '/sound.svg' : '/muted.svg') 
 		: ($isPlaying ? '/sound-dark.svg' : '/muted-dark.svg');
 
@@ -36,7 +36,7 @@
 	<button 
 		class="mute-btn" 
 		on:click={toggleMusic} 
-		style="background-color: {y > 250 ? 'var(--blue)' : 'var(--beige)'}; color: {y > 250 ? 'var(--beige)' : 'black'};">
+		style="background-color: {y > 150 ? 'var(--blue)' : 'var(--pure-white)'}; color: {y > 150 ? 'var(--beige)' : 'black'};">
 		<img src={currentIcon} alt="Sound Icon" />
 		{#if innerWidth > 799}
 			<span>{ $isPlaying ? 'Sound: On' : 'Sound: Off' }</span>

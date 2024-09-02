@@ -6,11 +6,13 @@ export const isMenuOpen = writable(false);
 // Function to disable body scroll
 function disableBodyScroll() {
     document.body.style.overflow = 'hidden';
+    console.log("menu is open");
 }
 
 // Function to enable body scroll
 function enableBodyScroll() {
-    document.body.style.overflow = '';
+    document.body.style.overflow = 'auto';
+    console.log("overflow hidden removed");
 }
 
 export function openMenu() {

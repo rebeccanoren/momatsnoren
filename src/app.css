@@ -6,10 +6,11 @@
 	--beige: #FAF8EF;
 	--salmon: #F4A89A;
 	--saturated-salmon: #F16C5B;
-	--secondary-color: #182F97;
+	--secondary-color: #291897;
 	--pure-white: #ffffff;
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #1a1a1c;
+	--text-color-muted: #848488;
 	--blue: #182F97;
 	--dark-blue: #1C2A6D;
 	--yellow: #FFE699;
@@ -103,6 +104,9 @@ a:visited, a:hover {
 .white-background {
 	background-color: var(--pure-white);
 }
+.beige-background {
+	background-color: var(--beige);
+}
 
 button {
 		margin: 6px 4px 8px 4px;
@@ -110,6 +114,7 @@ button {
 		font-size: 14px;
 		background-color: var(--blue);
 		color: var(--pure-white);
+		font-family: 'Abhaya Libre', serif;
 		padding: 12px 14px;
 		cursor: pointer;
 		border: none;

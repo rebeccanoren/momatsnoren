@@ -1,6 +1,18 @@
 <script>
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation'; // Import SvelteKit's navigation helper
+	import { closeMenu } from '$lib/menustore.js';
+
+
+function handleLinkClick(event, href) {
+  event.preventDefault(); // Prevent default link behavior
+  console.log("länk funkar")
+  closeMenu(); // Close the menu
+  setTimeout(() => {
+	goto(href); // Navigate to the new page
+  }, 100); // Slight delay to ensure the menu is closed before navigation
+}
 	
 	onMount(() => {
 		// Query all elements with the class 'menu-text'
@@ -39,7 +51,8 @@
 			data-sveltekit-prefetch 
 			class="menu-text" 
 			href="/"
-		>
+			on:click={(event) => handleLinkClick(event, '/')}>
+		
 			Hem
 		</a>
 		
@@ -48,7 +61,8 @@
 			data-sveltekit-prefetch 
 			class="menu-text" 
 			href="/schema"
-		>
+			on:click={(event) => handleLinkClick(event, '/schema')}>
+		
 			Schema
 		</a>
 		
@@ -57,7 +71,8 @@
 			data-sveltekit-prefetch 
 			class="menu-text" 
 			href="/koster"
-		>
+			on:click={(event) => handleLinkClick(event, '/koster')}>
+		
 			Om Koster
 		</a>
 		
@@ -66,17 +81,14 @@
 			data-sveltekit-prefetch 
 			class="menu-text" 
 			href="/faq"
-		>
+			on:click={(event) => handleLinkClick(event, '/faq')}>
+		
 			Frågor och svar
 		</a>
 	</div>
 </navigationLinks>
 
 <style>
-
-
-	/* Updated class names to ensure uniqueness */
-/* Menu container styling */
 .menu-container-links {
 	font-family: var(--Abhaya);
 	display: flex;
@@ -87,20 +99,28 @@
 	padding: 40px;
 }
 
-/* Styling for active menu items */
-:global(.menu-active) {
-	font-weight: bold;
+/* Styling for active (selected) menu items with strikethrough */
+:global(.menu-text.active) {
+  text-decoration: line-through; /* Strikethrough for the selected item */
+  opacity: 1; /* Ensure the selected item is fully opaque */
+}
+
+/* Full opacity on hover for all items */
+:global(.menu-text:hover) {
+  opacity: 1;
 }
 
 /* Styling for the main menu text */
 :global(.menu-text) {
 	color: var(--beige); /* Initial color for the menu text */
-	text-decoration: none;
+	text-decoration: none; /* Remove any default text decoration */
 	font-size: 80px;
 	line-height: 100px;
 	height: 100px;
 	overflow: hidden;
 	white-space: nowrap; /* Ensure text doesn't wrap */
+	opacity: 0.5; /* Reduced opacity for unselected items */
+	transition: opacity 0.3s ease; /* Smooth transition for opacity change */
 }
 
 /* Ensure letters have the same color as the menu text initially */

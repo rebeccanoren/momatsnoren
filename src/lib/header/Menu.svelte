@@ -23,7 +23,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--dark-blue);
+    background: linear-gradient(180deg, var(--dark-blue) 0%, var(--secondary-color) 74.48%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
 
   button {
 		position: absolute;
-		right: 24px;
+		right: 30px;
 		top: 16px;
 	}
 

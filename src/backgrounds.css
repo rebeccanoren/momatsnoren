@@ -22,9 +22,20 @@
     z-index: 1; /* Ensure it's beneath other content */
   }
 
+.square-background-small {
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	flex-grow: 1;
+	position: relative;
+}
+
   .square-background {
 	width: 100%;
-	min-height: 500px;
+	min-height: 550px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -50,6 +61,10 @@
 
   .content-overlap {
 	margin-top: -50px;
+  }
+
+  .content-overlap-small {
+	margin-top: -200px;
   }
 
   .text-wrapper {

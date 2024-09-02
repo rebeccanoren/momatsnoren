@@ -1,5 +1,4 @@
 <script>
-  import { fade, slide } from 'svelte/transition';
   import Header from '$lib/header/Header.svelte';
   import FlyingImage from '$lib/components/FlyingImage.svelte';
   import FlyingTwoImages from '$lib/components/FlyingTwoImages.svelte';
@@ -85,8 +84,8 @@
   </div>
 
   <div class="content-wrapper white-background">
-    <div class="top-background border-radius primary"></div>
-    <div class="square-background primary">
+    <div class="top-background border-radius beige-background"></div>
+    <div class="square-background beige-background">
       <div class="content content-overlap">
         <div class="content-image">
           <FlyingImage src="henrikrebecca.jpg" alt="Henrik och Rebecca" imageClass="image" /> 
