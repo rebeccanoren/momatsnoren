@@ -1,0 +1,4 @@
+body .formFooter,
+body .formFooter-heightMask {
+  display: none !important;
+}

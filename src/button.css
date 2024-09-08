@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* General button styles for internal and external buttons */
+
+button {
+  background-color: var(--blue);
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  border-radius: 60px;
+  padding: 8px 12px;
+}
+
+.button-link {
+  border-radius: 60px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* General styles for links in light class */
+a.light {
+  color: var(--text) !important; /* Base text color for light theme */
+  background-color: rgb(106, 57, 0, 0.05);
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover state */
+a.light:hover {
+  color: var(--text-hover) !important; /* Define a hover color variable */
+  background-color: rgba(
+    106,
+    57,
+    0,
+    0.15
+  ); /* Slightly darker background on hover */
+  opacity: 0.9; /* Add slight opacity effect */
+}
+
+/* Visited state */
+a.light:visited {
+  color: var(--text-visited) !important; /* Visited link color */
+}
+
+/* Active state */
+a.light:active {
+  color: var(--text-active) !important; /* Active link color */
+  background-color: rgba(106, 57, 0, 0.2); /* Darker background when clicked */
+}
+
+/* Focus state for accessibility */
+a.light:focus {
+  outline: 2px solid var(--blue); /* Focus outline for keyboard navigation */
+  color: var(--text-focus) !important; /* Optional focus color */
+}

@@ -1,9 +1,11 @@
 export function initBorderRadius() {
-  const sections = document.querySelectorAll('.content-wrapper'); // Select all content-wrapper sections
+  const sections = document.querySelectorAll(".content-wrapper"); // Select all content-wrapper sections
 
   const calculateBorderRadius = () => {
-    sections.forEach(section => {
-      const topBackground = section.querySelector('.top-background.border-radius'); // Select the top-background inside each section
+    sections.forEach((section) => {
+      const topBackground = section.querySelector(
+        ".top-background.border-radius",
+      ); // Select the top-background inside each section
 
       if (!topBackground) return; // If no top-background, skip the section
 
@@ -29,13 +31,13 @@ export function initBorderRadius() {
   };
 
   // Attach the scroll event listener
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
 
   // Call once to set the initial value
   calculateBorderRadius();
 
   // Return a cleanup function to remove the event listener when needed
   return () => {
-    window.removeEventListener('scroll', handleScroll);
+    window.removeEventListener("scroll", handleScroll);
   };
 }

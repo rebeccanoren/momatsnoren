@@ -15,7 +15,7 @@
 
   // Function to calculate transformation for the first image based on scroll
   const calculateTransform1 = () => {
-    const translateY1 = scrollY * -0.125 ; // Adjust for Y movement
+    const translateY1 = scrollY * -0.125; // Adjust for Y movement
     const rotateDeg1 = scrollY * 0.015; // Adjust rotation factor
     transform1 = `translate3d(0px, ${translateY1}%, 0px) rotate(${rotateDeg1}deg)`;
   };
@@ -46,6 +46,24 @@
   });
 </script>
 
+<div class="flying-image-container">
+  <!-- First image with its own transformation -->
+  <img
+    src={src1}
+    alt={alt1}
+    class={`flying-image ${imageClass1}`}
+    style="transform: {transform1};"
+  />
+
+  <!-- Second image with its own transformation -->
+  <img
+    src={src2}
+    alt={alt2}
+    class={`flying-image ${imageClass2}`}
+    style="transform: {transform2};"
+  />
+</div>
+
 <style>
   .flying-image-container {
     display: flex;
@@ -69,26 +87,18 @@
 
   @media only screen and (max-width: 799px) {
     .flying-image-container {
-    gap: 0px;
-  }
+      gap: 0px;
+    }
 
-	  .flying-image  {
-		max-width: 200px;
-	}}
+    .flying-image {
+      max-width: 200px;
+    }
+  }
 
   @media only screen and (max-width: 399px) {
-	  .flying-image  {
-		max-width: 120px;
-    border-radius: 12px;
-	}
-
+    .flying-image {
+      max-width: 120px;
+      border-radius: 12px;
+    }
   }
 </style>
-
-<div class="flying-image-container">
-  <!-- First image with its own transformation -->
-  <img src={src1} alt={alt1} class={`flying-image ${imageClass1}`} style="transform: {transform1};" />
-
-  <!-- Second image with its own transformation -->
-  <img src={src2} alt={alt2} class={`flying-image ${imageClass2}`} style="transform: {transform2};" />
-</div>

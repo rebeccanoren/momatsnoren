@@ -1,9 +1,9 @@
-.default .container-links{
-    background-color: blue;
+.default .container-links {
+  background-color: blue;
 }
 
 @media only screen and (max-width: 799px) {
-    .default .container-links{
-        background-color: blue;
-    }
-	}
+  .default .container-links {
+    background-color: blue;
+  }
+}

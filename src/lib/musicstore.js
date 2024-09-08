@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store';
+import { writable } from "svelte/store";
 
 // Store to track whether music is playing or paused
 export const isPlaying = writable(false);
@@ -6,8 +6,8 @@ export const isPlaying = writable(false);
 let backgroundMusic;
 
 // Initialize audio in the browser
-if (typeof window !== 'undefined') {
-  backgroundMusic = new Audio('/music.mp3');
+if (typeof window !== "undefined") {
+  backgroundMusic = new Audio("/music.mp3");
   backgroundMusic.loop = true; // Loop the music when playing
   backgroundMusic.muted = false; // Start unmuted but not autoplaying
 
@@ -23,7 +23,7 @@ export const toggleMusic = () => {
         backgroundMusic.pause(); // Pause music if it's currently playing
       } else {
         backgroundMusic.play().catch((err) => {
-          console.error('Failed to play music:', err);
+          console.error("Failed to play music:", err);
         });
       }
       return !current; // Toggle the playing state
