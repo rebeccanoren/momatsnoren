@@ -45,7 +45,7 @@
         <div class="text-wrapper">
           <AnimatedText
             title="Vi gifter oss!"
-            content="Okej, vi erkänner – det tog ett tag, men som man säger: långsamt byggs det bästa kärleksslottet (eller något sånt). Efter att ha varit tillsammans i 10 år är det nu äntligen dags att knyta ihop säcken! Den 9 augusti 2025 gör vi det officiellt på Kosteröarna, och eftersom en dag inte räcker, kör vi på en hel bröllopshelg som ni inte vill missa. Vi lovar en helg fylld av kärlek, skratt och lite (okej, kanske mycket) dans! Här hittar ni all info så att ni vet precis vad som händer, när det händer och hur ni bäst njuter av er tid."
+            content="Okej, vi erkänner – det tog ett tag men som man säger: långsamt byggs det bästa kärleksslottet (eller något sånt). Efter att ha varit tillsammans i 10 år är det nu äntligen dags att knyta ihop säcken! Den 9 augusti 2025 gör vi det officiellt på Kosteröarna. Eftersom en dag inte räcker kör vi på en hel bröllopshelg som ni inte vill missa. Vi lovar en helg fylld av kärlek, skratt och lite (okej, kanske mycket) dans! Här hittar ni all info så att ni vet precis vad som händer, när det händer och hur ni bäst njuter av er tid."
             action1={{
               label: "Se hela helgens schema här!",
               url: "/schema",
@@ -70,9 +70,9 @@
   </div>
 
   <div class="content-wrapper dark-blue-background">
-    <div class="top-background border-radius white-background"></div>
-    <div class="square-background white-background">
-      <div class="content content-overlap white-background">
+    <div class="top-background border-radius salmon-background"></div>
+    <div class="square-background salmon-background">
+      <div class="content content-overlap salmon-background">
         <div class="content-illustration">
           <FlyingImage
             src="rebecca-henrik-kajak.jpg"
@@ -82,19 +82,20 @@
         </div>
         <div class="text-wrapper">
           <AnimatedText
+            className="salmon"
             title="Varför Koster?"
             content="Det är en plats som är svår att beskriva utan att låta som en turistbroschyr – naturreservat mitt i havet, fantastiska vyer och en känsla av lugn som är svår att hitta någon annanstans. Bara en sådan sak!"
-            content2="Henriks familj har en särskild relation till Koster. I typ 50 år har de hyrt samma stuga, en riktig pärla utan vare sig toalett eller varmvatten. Här snackar vi att leva nära naturen på riktigt – duscha i havet och göra det bästa av situationen. Men det är just det som gör Koster så magiskt. Det är en plats där havsbrisen är det enda man behöver bry sig om"
-            content3="Och eftersom Rebecca är från västkusten, blev det en självklarhet. (Okej, hon hade en kort dröm om att gifta sig på en vingård i Frankrike, men den skrotades rätt snabbt) När det var dags att välja plats för vårt bröllop fanns det bara ett alternativ. Koster är vår plats."
+            content2="Henriks familj har en särskild relation till Koster. I ungefär 50 år har de hyrt samma stuga, en riktig pärla utan vare sig toalett eller varmvatten. Här snackar vi att leva nära naturen på riktigt – duscha i havet och göra det bästa av situationen. Men det är just det som gör Koster så magiskt. Det är en plats där havsbrisen är det enda man behöver bry sig om."
+            content3="Och eftersom Rebecca är från västkusten blev det en självklarhet. (Okej, hon hade en kort dröm om att gifta sig på en vingård i Frankrike men den skrotades rätt snabbt) När det var dags att välja plats för vårt bröllop fanns det bara ett alternativ. Koster är vår plats."
           />
         </div>
       </div>
     </div>
   </div>
 
-  <div class="content-wrapper white-background">
-    <div class="top-background border-radius beige-background"></div>
-    <div class="square-background beige-background">
+  <div class="content-wrapper salmon-background">
+    <div class="top-background border-radius yellow-background"></div>
+    <div class="square-background yellow-background">
       <div class="content content-overlap">
         <div class="content-image">
           <FlyingImage
@@ -106,7 +107,7 @@
         <div class="text-wrapper">
           <AnimatedText
             title="Hur allt började"
-            content="Vår gemensamma historia med Koster började dock lite... annorlunda. Första gången Rebecca besökte ön var 2017, eller kanske 2018? Det var i alla fall den sommaren då Henrik råkade ut för salmonella efter en tveksam kycklingsmörgås inköpt på en bensinstation i Portugal (rekommenderas inte!). Vi flög direkt från Portugal till Koster, och Henrik låg däckad, likblek och utslagen i över en vecka. Under tiden fick Rebecca upptäcka ön tillsammans med Henriks härliga familj. Trots – eller kanske tack vare – den något kaotiska starten har vi återvänt till Koster nästan varje år sedan dess. "
+            content="Vår gemensamma historia med Koster började däremot lite... annorlunda. Första gången Rebecca besökte ön var 2017 eller kanske 2018? Det var i alla fall den sommaren då Henrik råkade ut för salmonella efter en tveksam kycklingsmörgås inköpt på en bensinstation i Portugal (rekommenderas inte!). Vi flög direkt från Portugal till Koster och Henrik låg däckad, likblek och utslagen i över en vecka. Under tiden fick Rebecca upptäcka ön tillsammans med Henriks härliga familj."
             content2="När Henrik äntligen piggnade till fick vi upptäcka den magiska ön tillsammans. Bilden ni ser här ovan är faktiskt från vår första resa till Koster, när Henrik var tillbaka på fötter. Trots den lite kaotiska starten (eller kanske tack vare den), har vi återvänt nästan varje år sedan dess."
           />
         </div>

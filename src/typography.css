@@ -32,3 +32,14 @@ h4 {
   font-weight: bold;
 }
 
+.salmon p,
+.salmon h1,
+.salmon h2,
+.salmon h3,
+.salmon h4,
+.salmon h5,
+.salmon h6,
+.salmon span,
+.salmon li {
+  color: var(--saturated-salmon);
+}

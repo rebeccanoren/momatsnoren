@@ -18,7 +18,7 @@ export function initBorderRadius() {
         const progress = Math.max(0, Math.min(1, rect.top / viewportHeight));
 
         // Border-radius transitions from 50% to 0% as it reaches the top
-        const borderRadius = 50 * progress;
+        const borderRadius = 80 * progress;
 
         topBackground.style.borderTopLeftRadius = `${borderRadius}%`;
         topBackground.style.borderTopRightRadius = `${borderRadius}%`;

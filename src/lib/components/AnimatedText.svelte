@@ -1,6 +1,6 @@
 <script>
   import LinkButton from "./LinkButton.svelte"; // Import LinkButton
-
+  export let className = "";
   export let subtitle = ""; // Prop for h3
   export let title = ""; // Prop for h2
   export let content = ""; // Prop for paragraph
@@ -44,7 +44,7 @@
   }
 </script>
 
-<div class="wrapper" use:observe>
+<div class="wrapper {className}" use:observe>
   <div
     class="box"
     style="
