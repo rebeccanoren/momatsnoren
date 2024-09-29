@@ -1,73 +1,88 @@
 <script>
   import { onMount, onDestroy } from "svelte";
-  import { Map } from "mapbox-gl";
-  import "@site/src/node_modules/mapbox-gl/dist/mapbox-gl.css";
+  import mapboxgl from "mapbox-gl";
+  import "mapbox-gl/dist/mapbox-gl.css";
 
   let map;
   let mapContainer;
-  let lng, lat, zoom;
 
-  lng = -71.224518;
-  lat = 42.213995;
-  zoom = 9;
+  const lng = 11.0436374; // Longitude for Ekenäs Havshotell
+  const lat = 58.8951707; // Latitude for Ekenäs Havshotell
+  const zoom = 10;
 
-  function updateData() {
-    zoom = map.getZoom();
-    lng = map.getCenter().lng;
-    lat = map.getCenter().lat;
-  }
+  const accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
+
+  const kyrkaCoordinates = [11.023525, 58.885363]; // Kosters Kyrka
+  const stromstadCoordinates = [11.1748, 58.9388365]; // Strömstad
+  const kostersrokeriCoordinates = [11.0455763, 58.8932152]; // Kosters Rökeri
 
   onMount(() => {
-    const initialState = { lng: lng, lat: lat, zoom: zoom };
+    mapboxgl.accessToken = accessToken;
 
-    map = new Map({
-      container: mapContainer,
-      accessToken:
-        pk
-          .eyJ1IjoicmViZWNjYW5vcmVuIiwiYSI6ImNsMmhlejN5ODBjaTAzY256Mjd6ZGFodjkifQ
-          .hFIKIAjEP6xexxBUDkUMxA,
-      style: `mapbox://styles/mapbox/outdoors-v11`,
-      center: [initialState.lng, initialState.lat],
-      zoom: initialState.zoom,
-    });
+    // Ensure the map container is fully rendered before map creation
+    setTimeout(() => {
+      map = new mapboxgl.Map({
+        container: mapContainer,
+        style: "mapbox://styles/mapbox/streets-v12",
+        center: [lng, lat],
+        zoom: zoom,
+      });
 
-    map.on("move", () => {
-      updateData();
-    });
+      map.on("load", () => {
+        new mapboxgl.Marker({ color: "blue" })
+          .setLngLat(kyrkaCoordinates)
+          .setPopup(new mapboxgl.Popup().setText("Kosters Kyrka")) // Optional Popup
+          .addTo(map);
+
+        new mapboxgl.Marker({ color: "blue" })
+          .setLngLat(stromstadCoordinates)
+          .setPopup(new mapboxgl.Popup().setText("Strömstad Norra Hamnen")) // Optional Popup
+          .addTo(map);
+
+        new mapboxgl.Marker({ color: "blue" })
+          .setLngLat(kostersrokeriCoordinates)
+          .setPopup(new mapboxgl.Popup().setText("Kosters Rökeri")) // Optional Popup
+          .addTo(map);
+
+        new mapboxgl.Marker({ color: "blue", draggable: false })
+          .setLngLat([lng, lat])
+          .setPopup(new mapboxgl.Popup().setText("Ekenäs Havshotell")) // Optional Popup
+          .addTo(map);
+      });
+    }, 0); // Timeout ensures that mapContainer is ready
   });
 
   onDestroy(() => {
-    map.remove();
+    if (map) {
+      map.remove();
+      map = null;
+    }
+    mapContainer = null;
   });
 </script>
 
-<div>
-  <div class="sidebar">
-    Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom:
-    {zoom.toFixed(2)}
-  </div>
-  <div class="map-wrap">
-    <div class="map" bind:this={mapContainer} />
-  </div>
+<div class="map-container">
+  <div class="map" bind:this={mapContainer}></div>
 </div>
 
 <style>
+  .map-container {
+    width: 80vh;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+
   .map {
-    position: absolute;
     width: 100%;
     height: 100%;
   }
 
-  .sidebar {
-    background-color: rgb(35 55 75 / 90%);
-    color: #fff;
-    padding: 6px 12px;
-    font-family: monospace;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 12px;
-    border-radius: 4px;
+  @media only screen and (max-width: 799px) {
+    .map-container {
+      width: 300px;
+      height: 300px;
+    }
   }
 </style>

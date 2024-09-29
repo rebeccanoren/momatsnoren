@@ -16,10 +16,10 @@
 
 .top-background {
   width: 100%;
-  height: 380px; /* Adjust height as needed */
+  height: 300px; 
   flex-shrink: 0;
   position: relative;
-  z-index: 1; /* Ensure it's beneath other content */
+  z-index: 1; 
 }
 
 .square-background-small {
@@ -61,14 +61,37 @@
 
 .content-overlap {
   margin-top: -50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-overlap-small {
-  margin-top: -200px;
+  margin-top: 0px;
 }
 
+.content-image {
+  flex-shrink: 0; /* Prevent shrinking */
+  display: flex; /* Flexbox to align items */
+  justify-content: center; /* Center the image horizontally */
+  min-width: 500px;
+}
+
+
+.row {
+  flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  max-width: 1400px;
+}
+
+
+
 .text-wrapper {
-  max-width: 500px;
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
 }
 
 .content h3,
@@ -80,4 +103,18 @@
 
 .border-radius {
   transition: border-radius 0.3s ease;
+}
+
+@media only screen and (max-width: 799px) {
+  .row {
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    gap: 80px;
+
+  }
+  .content-overlap-small {
+    margin-top: -100px;
+  }
+  
+
 }

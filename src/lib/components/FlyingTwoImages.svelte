@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-bottom: -60px;
+    margin-bottom: -8px;
   }
 
   .flying-image-container img:first-child {
@@ -81,6 +81,7 @@
   }
 
   .flying-image {
+    max-width: 450px;
     transform-origin: bottom;
     transition: transform 0.1s ease-out;
   }

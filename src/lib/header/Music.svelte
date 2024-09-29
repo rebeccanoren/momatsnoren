@@ -2,8 +2,6 @@
   import { isPlaying, toggleMusic } from "$lib/musicstore.js"; // Import store and toggle function
   import { onMount } from "svelte";
 
-  let soundIcon = "/sound-dark.svg"; // Default to dark sound icon
-  let mutedIcon = "/muted-dark.svg"; // Default to dark muted icon
   let y = 0; // Track scroll position
   let innerWidth = 0; // Track window width, initialized to 0 for SSR
 
@@ -64,8 +62,10 @@
     display: flex;
     align-items: center;
     gap: 8px; /* Add space between icon and label */
-    padding: 8px 16px;
+    padding: 8px 12px;
     font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
   }
 
   button.mute-btn img {

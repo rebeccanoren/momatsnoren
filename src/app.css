@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
   --Abhaya: font-family: "Abhaya Libre", serif;
   --beige: #faf8ef;
-  --salmon: #f8c1ca;
-  --saturated-salmon: #b42426;
+  --salmon: #ffe6ea;
+  --saturated-salmon: #e13e41;
   --secondary-color: #291897;
+  --muted-blue: #505A8F;
   --pure-white: #ffffff;
   --heading-color: rgba(0, 0, 0, 0.7);
   --text: #1a1a1c;
@@ -90,8 +91,7 @@ a:hover {
 
 /* Styling for images */
 .image {
-  max-width: 350px;
-  width: 100%;
+  max-width: 500px;
   border-radius: 20px;
   height: auto;
   margin: 0 auto;
@@ -99,17 +99,21 @@ a:hover {
 
 
 
+.dark-hover {
+  cursor: none;
+  background: rgba(0, 0, 0, 0.05); /* Darker effect around the mouse */
+  transition: background 0.2s ease;
+}
+
 .cursor-effect {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: radial-gradient(circle, rgba(255, 0, 0, 0.6), transparent);
   border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2); /* Darker circle around the mouse */
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: opacity 0.5s ease-out;
-  z-index: 10000; /* Ensures it's on top */
-  border: 1px solid black; /* Temporary border for visibility */
+
 }
 
 
@@ -134,5 +138,10 @@ a:hover {
 
   .primary-section {
     max-width: 350px;
+  }
+
+  .image {
+    max-width: 200px;
+    border-radius: 12px;
   }
 }

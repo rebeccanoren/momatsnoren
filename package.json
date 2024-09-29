@@ -6,7 +6,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-      "format": "prettier --write ."
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -19,6 +19,7 @@
   },
   "type": "module",
   "dependencies": {
+    "mapbox-gl": "^3.6.0",
     "svelte-inview": "^4.0.2"
   }
 }

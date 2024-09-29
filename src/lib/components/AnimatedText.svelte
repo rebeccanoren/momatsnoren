@@ -15,7 +15,7 @@
 
   // Function to calculate opacity based on visibility
   function calculateOpacity(visibility) {
-    return Math.pow(visibility, 10); // Cubing visibility to make it fade out faster
+    return Math.pow(visibility, 4); // Cubing visibility to make it fade out faster
   }
 
   // Function to observe element visibility using IntersectionObserver
@@ -51,7 +51,7 @@
       opacity: {calculateOpacity(visibility)};
       transform: translateY({hasReachedFinalPosition
       ? 0
-      : 50 * (1 - visibility)}px);
+      : 150 * (1 - visibility)}px);
     "
   >
     {#if subtitle}
@@ -101,7 +101,8 @@
 
 <style>
   .wrapper {
-    margin-top: 30px;
+    margin-top: -50px;
+    max-width: 550px;
   }
 
   .button-wrapper {
@@ -116,7 +117,7 @@
   .box {
     margin: auto;
     opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start below by 50px */
+    transform: translateY(150); /* Start below by 150px */
     transition:
       opacity 0.5s ease,
       transform 0.5s ease; /* Smooth opacity and transform transition */

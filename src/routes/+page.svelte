@@ -31,16 +31,14 @@
     <div class="top-background border-radius yellow-background"></div>
     <div class="square-background yellow-background">
       <div class="content content-overlap">
-        <div class="content-image">
-          <FlyingTwoImages
-            src1="rebecca.jpg"
-            alt1="Rebecca"
-            imageClass1="image"
-            src2="henrik.jpg"
-            alt2="Henrik och Rebecca"
-            imageClass2="image"
-          />
-        </div>
+        <FlyingTwoImages
+          src1="rebecca.jpg"
+          alt1="Rebecca"
+          imageClass1="image"
+          src2="henrik.jpg"
+          alt2="Henrik och Rebecca"
+          imageClass2="image"
+        />
 
         <div class="text-wrapper">
           <AnimatedText
@@ -107,8 +105,8 @@
         <div class="text-wrapper">
           <AnimatedText
             title="Hur allt började"
-            content="Vår gemensamma historia med Koster började däremot lite... annorlunda. Första gången Rebecca besökte ön var 2017 eller kanske 2018? Det var i alla fall den sommaren då Henrik råkade ut för salmonella efter en tveksam kycklingsmörgås inköpt på en bensinstation i Portugal (rekommenderas inte!). Vi flög direkt från Portugal till Koster och Henrik låg däckad, likblek och utslagen i över en vecka. Under tiden fick Rebecca upptäcka ön tillsammans med Henriks härliga familj."
-            content2="När Henrik äntligen piggnade till fick vi upptäcka den magiska ön tillsammans. Bilden ni ser här ovan är faktiskt från vår första resa till Koster, när Henrik var tillbaka på fötter. Trots den lite kaotiska starten (eller kanske tack vare den), har vi återvänt nästan varje år sedan dess."
+            content="Första gången Rebecca besökte ön var 2017 eller kanske 2018? Det var i alla fall den sommaren då Henrik råkade ut för salmonella efter en tveksam kycklingsmörgås inköpt på en bensinstation i Portugal (rekommenderas inte!). Vi flög direkt från Portugal till Koster och Henrik låg däckad, likblek och utslagen i över en vecka. Under tiden fick Rebecca upptäcka ön tillsammans med Henriks härliga familj."
+            content2="När Henrik äntligen piggnade till fick vi upptäcka den magiska ön tillsammans. Bilden ni ser här ovan är faktiskt från vår första resa till Koster, när Henrik var tillbaka på fötter. Trots den lite kaotiska starten har vi återvänt nästan varje år sedan dess."
           />
         </div>
       </div>

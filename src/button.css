@@ -32,6 +32,18 @@ a.light {
   text-decoration: none; /* Remove underline */
 }
 
+a.dark {
+  color: var(--text) !important; /* Base text color for light theme */
+  background-color: rgb(255, 255, 255, 1);
+  text-decoration: none; /* Remove underline */
+}
+
+a.outline {
+  color: var(--pure-white) !important; /* Base text color for light theme */
+  border: 1px solid rgb(255, 255, 255, 1);
+  text-decoration: none; /* Remove underline */
+}
+
 /* Hover state */
 a.light:hover {
   color: var(--text-hover) !important; /* Define a hover color variable */

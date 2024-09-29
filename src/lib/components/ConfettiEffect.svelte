@@ -89,6 +89,12 @@
       ),
     );
 
+    // Apply dark hover effect on mouse area
+    document.body.classList.add("dark-hover");
+    setTimeout(() => {
+      document.body.classList.remove("dark-hover");
+    }, 200); // Duration of dark hover effect
+
     // Create a cursor effect element
     const cursorEffect = document.createElement("div");
     cursorEffect.classList.add("cursor-effect");

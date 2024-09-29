@@ -10,7 +10,7 @@
 
   // Function to calculate the transformation based on scroll
   const calculateTransform = () => {
-    const translateY = scrollY * -0.01; // Adjust the factor for Y movement
+    const translateY = scrollY * -0.012; // Adjust the factor for Y movement
     const rotateDeg = scrollY * 0.0001; // Adjust rotation factor
     transform = `translate3d(0px, ${translateY}%, 0px) rotate(${rotateDeg}deg)`;
   };
@@ -45,27 +45,27 @@
 <style>
   .flying-svg-container {
     display: flex;
-    justify-content: center;
-    margin: -80px;
+    align-items: flex-end;
   }
 
   .flying-svg {
     transform-origin: bottom;
     transition: transform 0.1s ease-out;
+    height: auto; /* Maintain aspect ratio */
   }
 
   /* Styling for illustrations */
   .illustration {
     max-width: 500px;
-    width: 100%;
     height: auto;
     margin: 0 auto;
     border-radius: 0;
+    height: 50%;
   }
 
   @media only screen and (max-width: 799px) {
     .flying-svg {
-      max-width: 300px;
+      max-width: 400px;
     }
 
     @media only screen and (max-width: 399px) {

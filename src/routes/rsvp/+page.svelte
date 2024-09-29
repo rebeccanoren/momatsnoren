@@ -32,6 +32,7 @@
     <div class="square-background yellow-background">
       <div class="content content-overlap">
         <iframe
+          title="RSVP Form"
           src="https://app.youform.com/forms/tgqcho2u"
           loading="lazy"
           width="100%"

@@ -126,6 +126,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
+                subtitle="Från 08:00"
                 title="Frukostmys och lunch i farten"
                 content="Efter gårdagens bravader vaknar ni upp till en hotellfrukost som inte går att motstå. Tänk nybakat bröd, färska juicer och allt annat gott som får er att gå tillbaka för en andra omgång. Perfekt sätt att starta dagen och ladda inför det som komma skall!"
                 subheading="Och vad gäller lunch?"
