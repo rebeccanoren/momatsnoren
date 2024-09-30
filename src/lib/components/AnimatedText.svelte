@@ -15,7 +15,7 @@
 
   // Function to calculate opacity based on visibility
   function calculateOpacity(visibility) {
-    return Math.pow(visibility, 4); // Cubing visibility to make it fade out faster
+    return Math.pow(visibility, 1); // Cubing visibility to make it fade out faster
   }
 
   // Function to observe element visibility using IntersectionObserver

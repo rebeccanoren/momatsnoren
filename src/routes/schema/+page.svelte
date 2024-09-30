@@ -222,9 +222,29 @@
         </div>
       </div>
     {:else if selectedDay === "Söndag"}
-      <div>
-        <h2>Schedule for Söndag</h2>
-        <p>This is the content for Söndag.</p>
+      <div class="content-wrapper dark-blue-background">
+        <div class="top-background border-radius white-background"></div>
+        <div class="square-background-small white-background">
+          <div class="content content-overlap-small white-background">
+            <div class="content-illustration">
+              <FlyingImage
+                src="ekenas.png"
+                alt="Ekenäs Havshotell"
+                imageClass="illustration"
+              />
+            </div>
+            <div class="text-wrapper">
+              <AnimatedText
+                subtitle="Från 08:00"
+                title="Frukost och farväl"
+                content="Efter en helg fylld med firande och glädje äter vi frukost på Ekenäs Havshotell. Perfekt för att ladda batterierna innan det är dags att börja tänka på hemresan.
+"
+                subheading="Hejdå!"
+                content2="När ni är mätta och belåtna, är det dags att packa ihop och ta Kosterbåten tillbaka till fastlandet. Tack för att ni har delat denna oförglömliga helg med oss – vi ser fram emot att ses snart igen!"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     {/if}
   </div>
