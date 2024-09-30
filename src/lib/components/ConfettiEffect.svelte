@@ -1,5 +1,6 @@
 <script>
   import { onMount, onDestroy } from "svelte";
+  import { playFireworkSound } from "$lib/fireworkSound.js";
 
   let canvas;
   let ctx;
@@ -88,6 +89,8 @@
         mouseVelocityY + randomOffsetY,
       ),
     );
+
+    playFireworkSound();
 
     // Apply dark hover effect on mouse area
     document.body.classList.add("dark-hover");

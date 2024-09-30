@@ -57,7 +57,7 @@
   header {
     width: 100%;
     background-color: var(--beige);
-    z-index: 999;
+    z-index: 99;
     transition:
       background-color 0.3s ease,
       color 0.3s ease;

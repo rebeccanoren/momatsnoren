@@ -6,6 +6,11 @@
   import "../button.css";
   import "../typography.css";
   import { onNavigate } from "$app/navigation";
+  import { goto } from "$app/navigation"; // SvelteKit's built-in navigation
+
+  function navigateToOSA() {
+    goto("/osa"); // Navigate to the "/osa" route
+  }
 
   let y = 0;
   let innerWidth = 0;
@@ -36,12 +41,27 @@
     </div>
   {/if}
 
+  <div class="CTA">
+    <button class="CTA" on:click={navigateToOSA}>OSA!</button>
+  </div>
+
   <div class="page-slot">
     <slot />
   </div>
 </div>
 
 <style>
+  .CTA {
+    position: fixed;
+    right: 76px;
+    top: 16px;
+    background-color: var(--yellow-dark);
+    z-index: 999;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    height: 38px;
+  }
+
   #rsvp {
     width: 200px;
     position: fixed;
