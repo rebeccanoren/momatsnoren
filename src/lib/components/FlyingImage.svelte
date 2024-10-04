@@ -65,7 +65,7 @@
 
   @media only screen and (max-width: 799px) {
     .flying-svg {
-      max-width: 400px;
+      max-width: 350px;
     }
 
     @media only screen and (max-width: 399px) {

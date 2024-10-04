@@ -92,8 +92,8 @@ a:hover {
 
 /* Styling for images */
 .image {
-  max-width: 500px;
-  border-radius: 20px;
+  max-width: 450px;
+  border-radius: 48px;
   height: auto;
   margin: 0 auto;
 }
@@ -143,6 +143,6 @@ a:hover {
 
   .image {
     max-width: 200px;
-    border-radius: 12px;
+    border-radius: 18px;
   }
 }
