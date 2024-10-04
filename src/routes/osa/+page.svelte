@@ -53,11 +53,4 @@
 </section>
 
 <style>
-  .time-counter {
-    background-color: var(--dark-blue);
-    color: var(--beige);
-    width: 100%;
-    padding: 100px 0;
-    text-align: center;
-  }
 </style>

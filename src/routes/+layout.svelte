@@ -7,9 +7,16 @@
   import "../typography.css";
   import { onNavigate } from "$app/navigation";
   import { goto } from "$app/navigation"; // SvelteKit's built-in navigation
+  import { page } from "$app/stores";
 
   function navigateToOSA() {
     goto("/osa"); // Navigate to the "/osa" route
+  }
+
+  function handleKeydown(event) {
+    if (event.key === "Enter" || event.key === " ") {
+      navigateToOSA();
+    }
   }
 
   let y = 0;
@@ -30,21 +37,32 @@
 <svelte:window bind:scrollY={y} bind:innerWidth />
 
 <div class="primary app-container">
-  {#if innerWidth > 500}
+  {#if $page.url.pathname !== "/osa"}
     <div>
-      <img
-        id="rsvp"
-        src="rsvp.png"
-        alt="RSVP"
-        style="transform: rotate({y * 0.5}deg)"
-      />
+      {#if innerWidth > 500}
+        <!-- Replaced <div> with <a> for interactivity and added necessary attributes -->
+        <a
+          href="/osa"
+          on:click|preventDefault={navigateToOSA}
+          on:keydown={handleKeydown}
+          tabindex="0"
+          role="button"
+          style="cursor: pointer;"
+        >
+          <img
+            id="rsvp"
+            src="rsvp.png"
+            alt="RSVP"
+            style="transform: rotate({y * 0.5}deg)"
+          />
+        </a>
+      {/if}
+
+      <div class="CTA">
+        <button class="CTA" on:click={navigateToOSA}>OSA!</button>
+      </div>
     </div>
   {/if}
-
-  <div class="CTA">
-    <button class="CTA" on:click={navigateToOSA}>OSA!</button>
-  </div>
-
   <div class="page-slot">
     <slot />
   </div>
@@ -53,7 +71,7 @@
 <style>
   .CTA {
     position: fixed;
-    right: 76px;
+    right: 72px;
     top: 16px;
     background-color: var(--yellow-dark);
     z-index: 999;

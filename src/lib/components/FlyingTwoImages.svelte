@@ -81,7 +81,7 @@
   }
 
   .flying-image {
-    max-width: 450px;
+    max-width: 400px;
     transform-origin: bottom;
     transition: transform 0.1s ease-out;
   }

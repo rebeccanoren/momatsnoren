@@ -215,7 +215,7 @@
               <AnimatedText
                 subtitle="21:00"
                 title="Bröllopsfest"
-                content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång"
+                content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång."
               />
             </div>
           </div>
