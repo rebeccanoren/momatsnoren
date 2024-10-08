@@ -24,8 +24,26 @@
     <div class="square-background blue-background">
       <div class="content content-overlap">
         <h2>Frågor och svar</h2>
+        <div class="email">
+          <p>Inte fått svar på din fråga? Skicka ett mejl till</p>
+          <a
+            href="mailto:brollop@momatsnoren.se"
+            style="text-decoration: none; color: inherit;"
+          >
+            brollop@momatsnoren.se
+          </a>
+        </div>
         <Accordion
           Question="Hur tar man sig till Koster?"
+          responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställa så ni inte missar något."
+          Action={{
+            label: "Läs mer om hur man reser till Koster",
+            url: "/koster",
+            className: "button-link outline",
+          }}
+        ></Accordion>
+        <Accordion
+          Question="Hur bokar vi hotellrum?"
           responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställa så ni inte missar något."
           Action={{
             label: "Läs mer om hur man reser till Koster",
@@ -76,5 +94,22 @@
 <style>
   .content h2 {
     color: var(--pure-white);
+  }
+  .content p {
+    color: var(--text-blue);
+  }
+
+  .content a {
+    color: var(--pure-white) !important;
+    text-decoration: underline !important;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>

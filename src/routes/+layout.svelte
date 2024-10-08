@@ -21,7 +21,6 @@
 
   let y = 0;
   let innerWidth = 0;
-  let open = false;
 
   onNavigate(() => {
     if (!document.startViewTransition) return;
@@ -40,7 +39,6 @@
   {#if $page.url.pathname !== "/osa"}
     <div>
       {#if innerWidth > 500}
-        <!-- Replaced <div> with <a> for interactivity and added necessary attributes -->
         <a
           href="/osa"
           on:click|preventDefault={navigateToOSA}
@@ -56,11 +54,17 @@
             style="transform: rotate({y * 0.5}deg)"
           />
         </a>
+
+        <div class="CTA">
+          <button class="CTA" on:click={navigateToOSA}>OSA!</button>
+        </div>
       {/if}
 
-      <div class="CTA">
-        <button class="CTA" on:click={navigateToOSA}>OSA!</button>
-      </div>
+      {#if y > 250}
+        <div class="CTA">
+          <button class="CTA" on:click={navigateToOSA}>OSA!</button>
+        </div>
+      {/if}
     </div>
   {/if}
   <div class="page-slot">
@@ -71,7 +75,7 @@
 <style>
   .CTA {
     position: fixed;
-    right: 72px;
+    right: 64px;
     top: 16px;
     background-color: var(--yellow-dark);
     z-index: 999;
