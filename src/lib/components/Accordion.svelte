@@ -1,26 +1,53 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import { slide } from "svelte/transition"; // Import the slide transition
-  import LinkButton from "./LinkButton.svelte"; // Import LinkButton
+  import { slide } from "svelte/transition";
+  import LinkButton from "./LinkButton.svelte";
 
-  let expanded = false; // Controls the open/close state
-  let isIconRotated = false; // Controls the rotation of the expand icon
+  let accordionElement;
+  let isIconRotated = false;
 
-  export let Question = ""; // Main question or title
-  export let responsePrimary = ""; // First response
-  export let responseSecondary = ""; // Second response
-  export let Action = null; // Single action (button or link)
+  export let keyword = "";
+  export let Question = "";
+  export let responsePrimary = "";
+  export let listItems = [];
+  export let responseSecondary = "";
+  export let Action = null;
+  export let expanded = false;
 
   const dispatch = createEventDispatcher();
+
+  function scrollWithOffset(element) {
+    const offset = 80; // Define the offset for the header
+    const elementPosition =
+      element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
 
   function toggleAccordion() {
     expanded = !expanded;
     isIconRotated = !isIconRotated;
     dispatch("toggle", { expanded });
+
+    if (expanded) {
+      scrollWithOffset(accordionElement);
+    }
+  }
+
+  $: if (expanded && accordionElement) {
+    scrollWithOffset(accordionElement);
   }
 </script>
 
-<div class="accordion {expanded ? 'open' : ''}">
+<div
+  class="accordion {expanded ? 'open' : ''}"
+  bind:this={accordionElement}
+  data-keyword={keyword}
+>
   <button type="button" class="accordion-summary" on:click={toggleAccordion}>
     <div class="accordion-content">
       <h3>{Question}</h3>
@@ -32,11 +59,18 @@
     />
   </button>
 
-  <!-- Apply the slide transition to the accordion details -->
   {#if expanded}
     <div class="accordion-details" transition:slide>
       {#if responsePrimary}
         <p>{responsePrimary}</p>
+      {/if}
+
+      {#if listItems.length > 0}
+        <ul>
+          {#each listItems as item}
+            <li>{item}</li>
+          {/each}
+        </ul>
       {/if}
 
       {#if responseSecondary}
@@ -49,6 +83,7 @@
             url={Action.url}
             label={Action.label}
             className={Action.className || "default-class"}
+            isDarkBackground={Action.isDarkBackground || false}
           />
         </div>
       {/if}
@@ -86,6 +121,17 @@
     padding: 8px 0;
     overflow: hidden;
     text-align: left;
+    color: var(--pure-white);
+  }
+
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin: 16px 0;
+  }
+
+  li {
+    margin-bottom: 8px;
     color: var(--pure-white);
   }
 

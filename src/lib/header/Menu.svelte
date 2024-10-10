@@ -6,7 +6,7 @@
 
 <div class="menu-overlay">
   <div class="menu-content">
-    <button on:click={closeMenu}><img src={close} alt="Sound Icon" /></button>
+    <button on:click={closeMenu}><img src={close} alt="Close" /></button>
     <NavigationLinks />
   </div>
 </div>
@@ -36,7 +36,7 @@
 
   button {
     position: absolute;
-    right: 30px;
+    right: 24px;
     top: 16px;
     height: 38px;
     width: 38px;

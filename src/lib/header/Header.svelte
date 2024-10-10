@@ -1,4 +1,6 @@
 <script>
+  import { goto } from "$app/navigation"; // Import for navigation
+
   import { fade, slide } from "svelte/transition";
   import { isMenuOpen, openMenu, closeMenu } from "$lib/menustore.js"; // Import from menustore
   import { page } from "$app/stores";
@@ -12,6 +14,16 @@
 
   // Update the flag based on the current path
   $: isSchemaPage = $page.url.pathname === "/schema";
+
+  function navigateToOSA() {
+    goto("/osa"); // Navigate to the "/osa" route
+  }
+
+  function handleKeydown(event) {
+    if (event.key === "Enter" || event.key === " ") {
+      navigateToOSA();
+    }
+  }
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -23,20 +35,24 @@
         <div>
           <h1>Henrik & Rebecca</h1>
           <p>9 augusti, 2025</p>
-          <button on:click={openMenu}
-            ><img src="/menu.svg" alt="Open Menu" /></button
-          >
 
+          <div class="buttons">
+            <button class="CTA" on:click={navigateToOSA}>OSA!</button>
+            <button class="menu" on:click={openMenu}>
+              <img src="/menu.svg" alt="Open Menu" />
+            </button>
+          </div>
+
+          <!-- Menu -->
           {#if $isMenuOpen}
-            <!-- Wrap Menu in a div and apply transition to this div -->
             <div transition:fade={{ duration: 300 }}>
               <Menu {closeMenu} />
             </div>
           {/if}
 
-          <!-- Pass menu state to Music component -->
+          <!-- Music Component with sliding effect -->
           <div class="music-container {$isMenuOpen ? 'slide-left' : ''}">
-            <Music />
+            <!-- <Music /> -->
           </div>
         </div>
       </div>
@@ -88,7 +104,9 @@
 
   .fixed-nav {
     position: fixed;
-    background-color: var(--beige);
+    backdrop-filter: blur(40px);
+    opacity: 0.98;
+    background-color: var(--background-with-opacity);
     top: 0;
     left: 0;
     width: 100vw;
@@ -124,12 +142,26 @@
     color: white;
   }
 
-  button {
-    position: absolute;
-    right: 32px;
+  .buttons {
+    position: fixed;
     top: 16px;
+    right: 24px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .menu {
+    /* position: absolute; */
     height: 38px;
     width: 38px;
+  }
+
+  .CTA {
+    background-color: var(--yellow-dark);
+    height: 38px;
+    padding: 0 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
   }
 
   img {

@@ -70,8 +70,8 @@
                 title="Incheckning Ekenäs Havshotell"
                 content="Vi fixat så att alla får plats på Ekenäs Havshotell – en plats där havsbrisen styr klockan och tiden går i slow motion. Checka in från 15:00, släpp väskorna och gör er redo för fredagsmys. Kanske gå en promenad längs stranden eller en drink på terrassen medan ni njuter av atmosfären. Och för dig som gärna kollar upp saker i förväg:"
                 action1={{
+                  url: "/faq?accordion=hotel-booking",
                   label: "Hur du bokar hotellrum",
-                  url: "/",
                   className: "button-link light",
                 }}
                 action2={{

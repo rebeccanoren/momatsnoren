@@ -1,10 +1,17 @@
 <script>
+  import { page } from "$app/stores"; // Import the page store from SvelteKit
   import Header from "$lib/header/Header.svelte";
   import Accordion from "$lib/components/Accordion.svelte";
   import { onMount, afterUpdate } from "svelte";
   import { initBorderRadius } from "$lib/borderradius.js";
-  import AnimatedText from "$lib/components/AnimatedText.svelte";
-  import Map from "$lib/components/Map.svelte";
+
+  let keywordToOpen = null;
+
+  // Reactively track the URL for changes
+  $: {
+    const urlParams = new URLSearchParams($page.url.search);
+    keywordToOpen = urlParams.get("accordion"); // Get the keyword from the URL
+  }
 
   onMount(() => {
     initBorderRadius(); // Initialize border-radius effect for each section
@@ -40,17 +47,34 @@
             label: "Läs mer om hur man reser till Koster",
             url: "/koster",
             className: "button-link outline",
+            isDarkBackground: true,
           }}
+          keyword="hotel-booking"
+          expanded={keywordToOpen === "travel"}
         ></Accordion>
         <Accordion
           Question="Hur bokar vi hotellrum?"
-          responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställa så ni inte missar något."
+          responsePrimary="Du bokar ditt rum enkelt via Ekenäs Havshotells hemsida. Vi har en bokningskod på gång från hotellet, så fort vi fått den kommer du att hitta den här.
+          
+          Dessa rummen finns att välja på:"
+          listItems={[
+            "Dubbelrum Superior, havsutsikt (24st) 2995:-/natt",
+            "Dubbelrum Ekelunden, nybyggda (6st) 2995:-/natt",
+            "Dubbelrum Kajutan (18st) 1995:-/natt",
+            "Dubbelrum Standard (4 st) 1595:-/natt",
+            "Trippelrum (8 st) 1595:-/rum",
+            "Enkelrum (6st) 1695:-/natt",
+          ]}
           Action={{
-            label: "Läs mer om hur man reser till Koster",
-            url: "/koster",
+            label: "Boka hotellrum",
+            url: "https://www.ekenashavshotell.se/hotellet",
             className: "button-link outline",
+            isDarkBackground: true,
           }}
-        ></Accordion>
+          keyword="hotel-booking"
+          expanded={keywordToOpen === "hotel-booking"}
+        />
+
         <Accordion
           Question="Vad är dresscoden?"
           responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festligt som ändå är bekvämt för en skärgårdsdag. Och ta gärna med något extra varmt om det skulle blåsa upp (det är trots allt västkusten!)."

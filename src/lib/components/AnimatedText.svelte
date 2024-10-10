@@ -101,7 +101,7 @@
 
 <style>
   .wrapper {
-    margin-top: -50px;
+    margin-top: -100px;
     max-width: 550px;
   }
 
@@ -126,6 +126,10 @@
   @media only screen and (max-width: 799px) {
     .button-wrapper {
       flex-direction: column;
+    }
+
+    .wrapper {
+      margin-top: 0px;
     }
   }
 </style>

@@ -2,6 +2,7 @@
   export let url = ""; // The URL to link to
   export let label = ""; // The text label of the link
   export let className = ""; // Optional class for styling
+  export let isDarkBackground = false; // New prop to detect background
 
   // Helper function to check if the URL is external
   function isExternalUrl(url) {
@@ -17,8 +18,8 @@
 >
   {label}
   {#if isExternalUrl(url)}
-    <!-- Optional icon for external links -->
-    <span class="external-icon"></span>
+    <!-- Conditional class based on background -->
+    <span class="external-icon {isDarkBackground ? 'dark' : 'light'}"></span>
   {/if}
 </a>
 
@@ -41,8 +42,17 @@
     width: 16px;
     height: 16px;
     margin-left: 8px;
-    background-image: url("/external-dark.svg");
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  /* Default icon for light background */
+  .external-icon.light {
+    background-image: url("/external-dark.svg");
+  }
+
+  /* Adjust icon for dark background */
+  .external-icon.dark {
+    background-image: url("/external-light.svg");
   }
 </style>

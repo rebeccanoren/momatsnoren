@@ -22,7 +22,7 @@
 
   // Function to calculate transformation for the second image based on scroll
   const calculateTransform2 = () => {
-    const translateY2 = scrollY * -0.05; // Different Y movement factor
+    const translateY2 = scrollY * -0.07; // Different Y movement factor
     const rotateDeg2 = scrollY * -0.012; // Different rotation factor
     transform2 = `translate3d(0px, ${translateY2}%, 0px) rotate(${rotateDeg2}deg)`;
   };

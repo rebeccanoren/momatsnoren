@@ -54,16 +54,6 @@
             style="transform: rotate({y * 0.5}deg)"
           />
         </a>
-
-        <div class="CTA">
-          <button class="CTA" on:click={navigateToOSA}>OSA!</button>
-        </div>
-      {/if}
-
-      {#if y > 250}
-        <div class="CTA">
-          <button class="CTA" on:click={navigateToOSA}>OSA!</button>
-        </div>
       {/if}
     </div>
   {/if}
@@ -73,17 +63,6 @@
 </div>
 
 <style>
-  .CTA {
-    position: fixed;
-    right: 64px;
-    top: 16px;
-    background-color: var(--yellow-dark);
-    z-index: 999;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    height: 38px;
-  }
-
   #rsvp {
     width: 200px;
     position: fixed;
