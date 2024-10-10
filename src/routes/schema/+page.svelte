@@ -97,7 +97,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="20:30"
+                subtitle="~20:30"
                 title="Middag på Kosters Rökeri"
                 content="Fredagsmiddagen är på oss. Vi har bord på Kosters Rökeri, 
                 ett ställe vi älskar och där vi har beställt deras signaturrätt: baguetter fyllda med skagenröra. 
@@ -149,7 +149,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="13:00"
+                subtitle="~13:00 (Ännu ej bestämt)"
                 title="Vigsel i Kosters Kyrka"
                 content="Nu händer det – vi säger ja till varandra i den vackra Kosters Kyrka som ligger 2 km från Ekenäs Havshotell. Med kärlek i luften och en och annan glädjetår (solglasögon och näsdukar kan vara bra att ha), blir vi herr och fru Momats Norén. Det är ögonblicket då vi officiellt delar allt – från Netflix-lösenord till vardagsäventyr. Missa inte det!"
                 action1={{
@@ -176,7 +176,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="15:00"
+                subtitle="~15:00 (Ännu ej bestämt)"
                 title="Migel och Bröllopsmiddag"
                 content="Efter vigseln återsamlas vi på Ekenäs Havshotell för mingel, foton och lite snacks. Vi ska göra vårt bästa för att hålla oss snygga för alla bilder. Och glöm inte att ladda mobilen – vi har en fotograf, men vi vill också se dagen genom era ögon"
                 content2="Sedan är det dags för kvällens höjdpunkt – bröllopsmiddagen! Vi ser fram emot att njuta av en god måltid tillsammans med er, fylld av skratt, tal (ja, några fler tårar kanske också) och självklart massa kärlek. När middagen är avklarad väntar en kväll med dans och fest – så spara lite energi för dansgolvet!"

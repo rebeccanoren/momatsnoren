@@ -4,6 +4,8 @@ import { writable } from "svelte/store";
 export const isPlaying = writable(false);
 
 let backgroundMusic;
+let lastPlayed = 0;
+
 
 // Initialize audio in the browser
 if (typeof window !== "undefined") {
@@ -37,3 +39,17 @@ export const toggleMute = () => {
     backgroundMusic.muted = !backgroundMusic.muted;
   }
 };
+
+
+export function playHoverSound() {
+  const now = Date.now();
+
+  // Check if 1 second (1000 ms) has passed since the last time the sound was played
+  if (now - lastPlayed >= 500) {
+    const audio = new Audio('/happy-pop.mp3'); // Replace with your sound file path
+    audio.volume = 0.1; // Set volume to 50%
+    audio.play();
+
+    lastPlayed = now; // Update the lastPlayed timestamp
+  }
+}

@@ -4,6 +4,31 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      // Array med olika titelalternativ
+      const titles = [
+      "Skaldjur, dans och skratt – Nu blir det bröllop på Koster!",
+        "Vi kastar loss mot äktenskapets djupa vatten!",
+        "Kärlek, tång och skagenröra – Henrik & Rebecca gifter sig!",
+        "Dags att säga oui på Koster!",
+        "Oui i Frankrike och ja på Koster",
+        "Nu blåser kärlekens vindar på Koster!",
+        "Efter 10 år: Nu kör vi på Koster! 💍",
+        "Bröllop på Koster: Äntligen dags för kärlek och fest!",
+        "10 år senare... Henrik & Rebecca säger JA på Koster!",
+        "Bröllop och skaldjur – Henrik & Rebecca på Koster!",
+        "Från black jack till vigselring – Henrik & Rebecca!",
+        "Bröllopshelg på Koster",
+        "Rebecca & Henrik – En helg fylld med kärlek och dans!",
+        "Kosteröarna: Där Rebecca & Henrik säger sitt JA! 💕"
+      ];
+
+      // Väljer en slumpmässig titel från arrayen
+      const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+
+      // Sätter den slumpmässiga titeln
+      document.title = randomTitle;
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">

@@ -128,6 +128,10 @@
     text-decoration: underline !important;
   }
 
+  .content {
+    padding-bottom: 200px;
+  }
+
   .email {
     display: flex;
     flex-direction: row;
