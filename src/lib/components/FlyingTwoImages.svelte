@@ -98,7 +98,7 @@
 
   @media only screen and (max-width: 399px) {
     .flying-image {
-      max-width: 100px;
+      max-width: 150px;
       border-radius: 12px;
     }
   }
