@@ -92,13 +92,13 @@
     }
 
     .flying-image {
-      max-width: 200px;
+      max-width: 160px;
     }
   }
 
   @media only screen and (max-width: 399px) {
     .flying-image {
-      max-width: 120px;
+      max-width: 100px;
       border-radius: 12px;
     }
   }

@@ -73,7 +73,7 @@
   flex-shrink: 0; /* Prevent shrinking */
   display: flex; /* Flexbox to align items */
   justify-content: center; /* Center the image horizontally */
-  min-width: 500px;
+  min-width: 100%;
 }
 
 
