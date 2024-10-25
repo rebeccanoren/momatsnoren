@@ -12,12 +12,12 @@
   --heading-color: rgba(0, 0, 0, 0.7);
   --text: #1a1a1c;
   --text-muted: #848488;
-  --text-blue: #96b0ff;
+  --text-blue: #848488;
   --blue: #182f97;
   --dark-blue: #1c2a6d;
   --yellow: #ffe699;
   --yellow-dark: #ffeb7c;
-  --background-with-opacity: rgba(255, 255, 255, 0.85);
+  --background-without-opacity: rgba(255, 255, 255, 0.7);
   --dark: #080808;
   --column-width: 42rem;
   --column-margin-top: 4rem;

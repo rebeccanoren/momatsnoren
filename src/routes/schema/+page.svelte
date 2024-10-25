@@ -213,7 +213,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="21:00"
+                subtitle="~21:00 (Ännu ej bestämt)"
                 title="Bröllopsfest"
                 content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång."
               />

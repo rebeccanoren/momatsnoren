@@ -3,8 +3,8 @@
   import { slide } from "svelte/transition";
   import LinkButton from "./LinkButton.svelte";
 
-  let accordionElement;
   let isIconRotated = false;
+  let accordionElement;
 
   export let keyword = "";
   export let Question = "";
@@ -12,21 +12,9 @@
   export let listItems = [];
   export let responseSecondary = "";
   export let Action = null;
-  export let expanded = false;
+  export let expanded = fasle;
 
   const dispatch = createEventDispatcher();
-
-  function scrollWithOffset(element) {
-    const offset = 80; // Define the offset for the header
-    const elementPosition =
-      element.getBoundingClientRect().top + window.scrollY;
-    const offsetPosition = elementPosition - offset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  }
 
   function toggleAccordion() {
     expanded = !expanded;
@@ -34,12 +22,8 @@
     dispatch("toggle", { expanded });
 
     if (expanded) {
-      scrollWithOffset(accordionElement);
+      accordionElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }
-
-  $: if (expanded && accordionElement) {
-    scrollWithOffset(accordionElement);
   }
 </script>
 

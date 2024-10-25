@@ -105,7 +105,7 @@
   .fixed-nav {
     position: fixed;
     backdrop-filter: blur(40px);
-    opacity: 0.98;
+    opacity: 0.999;
     background-color: var(--background-with-opacity);
     top: 0;
     left: 0;
@@ -158,7 +158,6 @@
 
   .CTA {
     background-color: var(--yellow-dark);
-    height: 38px;
     padding: 0 12px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;

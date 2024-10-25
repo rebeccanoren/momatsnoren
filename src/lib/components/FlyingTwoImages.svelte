@@ -100,6 +100,7 @@
     .flying-image {
       max-width: 150px;
       border-radius: 12px;
+      gap: -10px;
     }
   }
 </style>

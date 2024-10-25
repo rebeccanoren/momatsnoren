@@ -101,7 +101,7 @@
 
 <style>
   .wrapper {
-    margin-top: -100px;
+    margin-top: -20px;
     max-width: 550px;
   }
 
@@ -129,7 +129,7 @@
     }
 
     .wrapper {
-      margin-top: 0px;
+      margin-top: -20px;
     }
   }
 </style>

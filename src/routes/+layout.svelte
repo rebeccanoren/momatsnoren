@@ -56,7 +56,7 @@
 <div class="primary app-container">
   {#if $page.url.pathname !== "/osa"}
     <div>
-      {#if innerWidth > 1200}
+      {#if innerWidth > 500}
         <a
           href="/osa"
           on:click|preventDefault={navigateToOSA}

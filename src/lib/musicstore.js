@@ -42,14 +42,7 @@ export const toggleMute = () => {
 
 
 export function playHoverSound() {
-  const now = Date.now();
-
-  // Check if 1 second (1000 ms) has passed since the last time the sound was played
-  if (now - lastPlayed >= 500) {
-    const audio = new Audio('/happy-pop.mp3'); // Replace with your sound file path
-    audio.volume = 0.1; // Set volume to 50%
-    audio.play();
-
-    lastPlayed = now; // Update the lastPlayed timestamp
-  }
+  const audio = new Audio('/happy-pop.mp3'); // Replace with your sound file path
+  audio.volume = 0.5; // Set volume to 50%
+  audio.play();
 }
