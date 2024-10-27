@@ -12,7 +12,7 @@
   export let listItems = [];
   export let responseSecondary = "";
   export let Action = null;
-  export let expanded = fasle;
+  export let expanded = false;
 
   const dispatch = createEventDispatcher();
 

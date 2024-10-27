@@ -105,8 +105,7 @@
   .fixed-nav {
     position: fixed;
     backdrop-filter: blur(40px);
-    opacity: 0.999;
-    background-color: var(--background-with-opacity);
+    background-color: var(--background-without-opacity);
     top: 0;
     left: 0;
     width: 100vw;

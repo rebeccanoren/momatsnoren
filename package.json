@@ -19,6 +19,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
     "mapbox-gl": "^3.6.0",
     "svelte-inview": "^4.0.2"
   }
