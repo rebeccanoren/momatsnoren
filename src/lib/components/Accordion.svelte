@@ -80,7 +80,7 @@
 <style>
   .accordion {
     border-bottom: 1px solid RGB(255, 255, 255, 0.2);
-    width: 80vh;
+    width: 700px;
   }
 
   .accordion-summary {
@@ -135,12 +135,12 @@
 
   @media only screen and (max-width: 799px) {
     .accordion {
-      width: 80%;
+      width: 100%;
     }
   }
   @media only screen and (max-width: 399px) {
     .accordion {
-      width: 80%;
+      width: 100%;
     }
   }
 </style>
