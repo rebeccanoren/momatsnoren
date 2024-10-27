@@ -101,9 +101,11 @@
         <Accordion
           Question="Vad händer om det regnar?"
           responsePrimary="Vi hoppas på strålande sol men västkustväder kan vara lite oförutsägbart! Om regnet skulle göra entré har vi såklart en plan B. Minglet flyttas inomhus och festen rullar på som planerat i skydd från vädret."
-          responseSecondary="Men eftersom vi ändå kommer behöva röra oss mellan olika platser utomhus (och vädret kan skifta snabbt på Koster), rekommenderar vi att ni tar med er ett paraply och kanske en regnjacka. Vi vill att ni ska kunna njuta av helgen oavsett väder. Med ett paraply i handen blir även en regnskur lite mysigare!
-
-"
+          responseSecondary="Men eftersom vi ändå kommer behöva röra oss mellan olika platser utomhus (och vädret kan skifta snabbt på Koster), rekommenderar vi att ni tar med er ett paraply och kanske en regnjacka. Vi vill att ni ska kunna njuta av helgen oavsett väder. Med ett paraply i handen blir även en regnskur lite mysigare!"
+        ></Accordion>
+        <Accordion
+          Question="Vad gäller om jag vill hålla ett tal?"
+          responsePrimary="Vill du hålla tal? Vad kul! Vi kommer snart uppdatera med mer info om hur du anmäler dig här på sajten – börja fila på dina bästa stories så länge!"
         ></Accordion>
         <Accordion
           Question="Vad gör vi om vi vill stanna längre än bröllopshelgen?"
