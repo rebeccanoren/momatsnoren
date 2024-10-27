@@ -78,7 +78,7 @@
 
           <Accordion
             Question="Vad är dresscoden?"
-            responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festligt, gärna färgglatt, som ändå är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
+            responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festlit. Gärna färgglatt som är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
           ></Accordion>
           <Accordion
             Question="Kommer det finnas särskilda matalternativ?"
