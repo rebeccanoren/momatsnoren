@@ -80,7 +80,7 @@
 <style>
   .accordion {
     border-bottom: 1px solid RGB(255, 255, 255, 0.2);
-    width: 90vh;
+    width: 80vh;
   }
 
   .accordion-summary {
