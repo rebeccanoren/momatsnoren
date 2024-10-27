@@ -78,17 +78,17 @@
 
           <Accordion
             Question="Vad är dresscoden?"
-            responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festligt som ändå är bekvämt för en skärgårdsdag. Och ta gärna med något extra varmt om det skulle blåsa upp (det är trots allt västkusten!)."
+            responsePrimary="Vi kör på somrig elegans med en touch av skärgårdsstil – tänk klänning, kostym eller något festligt, gärna färgglatt, som ändå är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
           ></Accordion>
           <Accordion
             Question="Kommer det finnas särskilda matalternativ?"
             responsePrimary="Självklart! Vi vill att alla ska kunna njuta av bröllopsmiddagen, oavsett matpreferenser eller allergier. Det kommer finnas både vegetariska och glutenfria alternativ, samt hänsyn till specifika allergier (som nötter, laktos, osv.)."
-            responseSecondary="Om ni har några särskilda matpreferenser eller allergier som vi inte redan vet om, låt oss gärna veta i förväg så ser vi till att ni får något som passar er."
+            responseSecondary="Om ni har några särskilda matpreferenser eller allergier som vi inte redan vet om, låt oss gärna veta i förväg i samband med att ni tackar ja så ser vi till att ni får något som passar er."
           ></Accordion>
           <Accordion
             Question="Hur är det med bröllopsgåvor?"
             responsePrimary="Vi uppskattar verkligen tanken, men vi vill vara tydliga: vi önskar oss inga fysiska gåvor. Att ni är med oss och firar på Koster är allt vi behöver! Eftersom vi kommer att vara på en ö, och låt oss vara ärliga – att frakta en brödrost eller en kristallvas över havet är inte direkt något vi vill utsätta er för, så det kan bli lite knepigt med transport och logistik."
-            responseSecondary="Men om ni ändå vill ge något, har vi allt vi behöver hemma (utom möjligen ett större förråd för alla Henriks verktyg…). Ett bidrag till vår framtida resa skulle därför vara väldigt uppskattat. Vår fantastiska brudtärna Natalie kommer att administrera Swish-gåvorna. Ni kan enkelt swisha ert bidrag till henne på 0730542754."
+            responseSecondary="Men om ni ändå vill ge något, har vi allt vi behöver hemma (utom möjligen ett större förråd för alla Henriks verktyg…). Ett bidrag till vår framtida resa skulle därför vara väldigt uppskattat. Vår fantastiska brudtärna Natalie kommer att administrera Swish-gåvorna. Ni kan swisha ert bidrag till henne på 0730542754."
           ></Accordion>
           <Accordion
             Question="Kan vi ta med barn?"
