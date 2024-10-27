@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  margin:-1px;
 }
 
 .top-background {
@@ -73,7 +74,6 @@
   flex-shrink: 0; /* Prevent shrinking */
   display: flex; /* Flexbox to align items */
   justify-content: center; /* Center the image horizontally */
-  min-width: 100%;
 }
 
 

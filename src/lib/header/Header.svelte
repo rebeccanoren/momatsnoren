@@ -160,6 +160,7 @@
     padding: 0 12px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    color: var(--dark);
   }
 
   img {
