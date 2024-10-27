@@ -43,7 +43,7 @@
         <div class="text-wrapper">
           <AnimatedText
             title="Vi gifter oss!"
-            content="Okej, vi erkänner – det tog ett tag men som man säger: långsamt byggs det bästa kärleksslottet (eller något sånt). Efter att ha varit tillsammans i 10 år är det nu äntligen dags att knyta ihop säcken! Den 9 augusti 2025 gör vi det officiellt på Kosteröarna. Eftersom en dag inte räcker kör vi på en hel bröllopshelg som ni inte vill missa. Vi lovar en helg fylld av kärlek, skratt och lite (okej, kanske mycket) dans! Här hittar ni all info så att ni vet precis vad som händer, när det händer och hur ni bäst njuter av er tid."
+            content="Okej, vi erkänner – det tog ett tag men som man säger: långsamt byggs det bästa kärleksslottet (eller något sånt). Efter att ha varit tillsammans i 10 år är det nu äntligen dags att knyta ihop säcken! Den 9 augusti 2025 gör vi det officiellt på Kosteröarna. Eftersom en dag inte räcker kör vi på en hel bröllopshelg som ni inte vill missa. Vi lovar en helg fylld av kärlek, skratt och dans! Här hittar ni all info så att ni vet precis vad som händer, när det händer och hur ni bäst njuter av er tid."
             action1={{
               label: "Se hela helgens schema här!",
               url: "/schema",

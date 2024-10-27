@@ -43,7 +43,7 @@
         <div class="accordions">
           <Accordion
             Question="Hur tar man sig till Koster?"
-            responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställa så ni inte missar något."
+            responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställe så ni inte missar något."
             Action={{
               label: "Läs mer om hur man reser till Koster",
               url: "/koster",
@@ -78,7 +78,7 @@
 
           <Accordion
             Question="Vad är dresscoden?"
-            responsePrimary="Vi kör på somrig elegans med en touch av skärgårdsstil – tänk klänning, kostym eller något festligt, gärna färgglatt, som ändå är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
+            responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festligt, gärna färgglatt, som ändå är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
           ></Accordion>
           <Accordion
             Question="Kommer det finnas särskilda matalternativ?"
