@@ -40,7 +40,7 @@
   <div class="content-wrapper white-background">
     <div class="top-background border-radius yellow-background"></div>
     <div class="square-background yellow-background">
-      <div class="content content-overlap row">
+      <div class="content content-overlap">
         <!-- Image on the left -->
         <div class="content-image">
           <FlyingImage
