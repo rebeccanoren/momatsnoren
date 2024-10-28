@@ -3,10 +3,10 @@
   import FlyingImage from "$lib/components/FlyingImage.svelte";
   import DaySelector from "$lib/components/DaySelector.svelte";
   import { onMount, afterUpdate } from "svelte";
-  import { startCountdown } from "$lib/countdowntimer.js";
   import { initBorderRadius } from "$lib/borderradius.js";
   import AnimatedText from "$lib/components/AnimatedText.svelte";
   import ConfettiEffect from "$lib/components/ConfettiEffect.svelte";
+  import { selectedDay } from "$lib/selectedDayStore.js"; // Import the store
 
   let confettiTrigger = false;
 
@@ -18,41 +18,32 @@
     confettiTrigger = false;
   }
 
-  let countdown = { days: 0, hours: 0, minutes: 0, seconds: 0, expired: false };
-  let targetDate = new Date("August 9, 2025 13:00:00").getTime();
-
-  let selectedDay = "Fredag"; // Default day
-
-  onMount(() => {
-    const stopCountdown = startCountdown(targetDate, (newCountdown) => {
-      countdown = newCountdown;
-    });
-
-    initBorderRadius(); // Initialize border-radius effect for each section
-
-    return () => {
-      stopCountdown();
-    };
-  });
-
-  afterUpdate(() => {
-    initBorderRadius(); // Reapply border-radius effect after each DOM update
-  });
-
   const days = ["Fredag", "Lördag", "Söndag"];
 
-  function handleDaySelection(day) {
-    selectedDay = day;
-  }
+  // Reset selectedDay on mount to ensure the default day is set
+  onMount(() => {
+    selectedDay.reset(); // Set the default day based on the store’s initial logic
+    initBorderRadius();
+  });
+
+  afterUpdate(initBorderRadius);
+
+  // Reactive statement to update content based on `selectedDay`
+  $: dayContent =
+    $selectedDay === "Fredag"
+      ? "fridayContent"
+      : $selectedDay === "Lördag"
+        ? "saturdayContent"
+        : "sundayContent";
 </script>
 
 <Header />
 
 <section class="scrolling-slider dark-blue-background secondary">
   <div class="content-wrapper dark-blue-background">
-    <DaySelector {days} bind:selectedDay on:selectDay={handleDaySelection} />
+    <DaySelector {days} bind:selectedDay={$selectedDay} />
 
-    {#if selectedDay === "Fredag"}
+    {#if dayContent === "fridayContent"}
       <div class="content-wrapper dark-blue-background">
         <div class="top-background border-radius beige-background"></div>
         <div class="square-background-small beige-background">
@@ -112,7 +103,7 @@
           </div>
         </div>
       </div>
-    {:else if selectedDay === "Lördag"}
+    {:else if dayContent === "saturdayContent"}
       <div class="content-wrapper dark-blue-background">
         <div class="top-background border-radius white-background"></div>
         <div class="square-background-small white-background">
@@ -149,7 +140,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~13:00 (Ännu ej bestämt)"
+                subtitle="~13:00 (Preliminär tid)"
                 title="Vigsel i Kosters Kyrka"
                 content="Nu händer det – vi säger ja till varandra i den vackra Kosters Kyrka som ligger 2 km från Ekenäs Havshotell. Med kärlek i luften och en och annan glädjetår (solglasögon och näsdukar kan vara bra att ha), blir vi herr och fru Momats Norén. Det är ögonblicket då vi officiellt delar allt – från Netflix-lösenord till vardagsäventyr. Missa inte det!"
                 action1={{
@@ -176,7 +167,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~15:00 (Ännu ej bestämt)"
+                subtitle="~15:00 (Preliminär tid)"
                 title="Migel och Bröllopsmiddag"
                 content="Efter vigseln återsamlas vi på Ekenäs Havshotell för mingel, foton och lite snacks. Vi ska göra vårt bästa för att hålla oss snygga för alla bilder. Och glöm inte att ladda mobilen – vi har en fotograf, men vi vill också se dagen genom era ögon"
                 content2="Sedan är det dags för kvällens höjdpunkt – bröllopsmiddagen! Vi ser fram emot att njuta av en god måltid tillsammans med er, fylld av skratt, tal (ja, några fler tårar kanske också) och självklart massa kärlek. När middagen är avklarad väntar en kväll med dans och fest – så spara lite energi för dansgolvet!"
@@ -213,7 +204,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~21:00 (Ännu ej bestämt)"
+                subtitle="~21:00 (Preliminär tid)"
                 title="Bröllopsfest"
                 content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång."
               />
@@ -221,7 +212,7 @@
           </div>
         </div>
       </div>
-    {:else if selectedDay === "Söndag"}
+    {:else if dayContent === "sundayContent"}
       <div class="content-wrapper dark-blue-background">
         <div class="top-background border-radius white-background"></div>
         <div class="square-background-small white-background">

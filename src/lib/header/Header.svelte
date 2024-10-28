@@ -1,6 +1,6 @@
 <script>
   import { goto } from "$app/navigation"; // Import for navigation
-
+  import { onMount, afterUpdate } from "svelte";
   import { fade, slide } from "svelte/transition";
   import { isMenuOpen, openMenu, closeMenu } from "$lib/menustore.js"; // Import from menustore
   import { page } from "$app/stores";
@@ -150,7 +150,6 @@
   }
 
   .menu {
-    /* position: absolute; */
     height: 38px;
     width: 38px;
   }

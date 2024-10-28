@@ -1,26 +1,46 @@
 <script>
-  import { onMount } from "svelte"; // Import onMount from Svelte
-  import { slide } from "svelte/transition"; // Import the slide animation
-  export let days = ["Fredag", "Lördag", "Söndag"];
-  export let selectedDay = "Fredag";
+  import { onMount } from "svelte";
+  import { slide } from "svelte/transition";
+  import { selectedDay } from "$lib/selectedDayStore.js"; // Import the store
+  import { get } from "svelte/store"; // Helper to get the initial value
 
-  function selectDay(day) {
-    selectedDay = day;
+  export let days = ["Fredag", "Lördag", "Söndag"];
+  let initialLoad = true; // Track initial load to prevent scrolling on mount
+
+  function scrollToTop() {
+    window.scrollTo({ top: 300, behavior: "smooth" });
   }
 
   // Automatically select the correct day based on the actual date
   onMount(() => {
     const today = new Date();
     const year = today.getFullYear();
-    const month = today.getMonth() + 1; // JavaScript months are 0-11
+    const month = today.getMonth() + 1;
     const date = today.getDate();
 
     if (year === 2025 && month === 8 && date === 9) {
-      selectedDay = "Lördag";
+      selectedDay.set("Lördag");
     } else if (year === 2025 && month === 8 && date === 10) {
-      selectedDay = "Söndag";
+      selectedDay.set("Söndag");
     }
+
+    initialLoad = false; // Set initialLoad to false after onMount completes
+
+    // Subscribe to `selectedDay` changes
+    selectedDay.subscribe((newDay) => {
+      if (!initialLoad) {
+        scrollToTop();
+      }
+    });
   });
+
+  // Triggered when the user selects a day
+  function selectDay(day) {
+    if (get(selectedDay) !== day) {
+      selectedDay.set(day); // Update the store value
+      console.log(day);
+    }
+  }
 </script>
 
 <div class="day-selector-wrapper">
@@ -28,7 +48,7 @@
     <div class="days">
       {#each days as day}
         <button
-          class:selected={day === selectedDay}
+          class:selected={day === $selectedDay}
           on:click={() => selectDay(day)}
           transition:slide
         >
@@ -49,9 +69,9 @@
     border-radius: 40px;
     padding: 1px;
     margin-bottom: 40px;
-    box-shadow: 25px 15px 60px 0px rgba(135, 101, 11, 0.38);
-    -webkit-box-shadow: 15px 25px 60px 0px rgba(135, 101, 11, 0.38);
-    -moz-box-shadow: 25px 15px 60px 0px rgba(135, 101, 11, 0.38);
+    box-shadow: 25px 15px 60px 0px rgba(39, 31, 10, 0.38);
+    -webkit-box-shadow: 15px 25px 60px 0px rgba(39, 31, 10, 0.38);
+    -moz-box-shadow: 25px 15px 60px 0px rgba(39, 31, 10, 0.38);
   }
 
   .days {
@@ -77,5 +97,29 @@
 
   button:hover:not(.selected) {
     background-color: #ddd;
+  }
+
+  @media only screen and (max-width: 799px) {
+    .day-selector-wrapper {
+      position: fixed;
+      bottom: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+    }
+
+    .day-selector {
+      backdrop-filter: blur(30px);
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .days button {
+      background-color: rgba(255, 255, 255, 0.01) !important;
+    }
+
+    .day-selector .days button.selected {
+      background-color: var(--blue) !important;
+      color: var(--pure-white);
+    }
   }
 </style>
