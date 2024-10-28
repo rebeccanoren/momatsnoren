@@ -105,7 +105,7 @@
         <div class="text-wrapper">
           <AnimatedText
             title="Hur allt började"
-            content="Första gången Rebecca besökte ön var 2017 eller kanske 2018? Det var i alla fall den sommaren då Henrik råkade ut för salmonella efter en tveksam kycklingsmörgås inköpt på en bensinstation i Portugal (rekommenderas inte!). Vi flög direkt från Portugal till Koster och Henrik låg däckad, likblek och utslagen i över en vecka. Under tiden fick Rebecca upptäcka ön tillsammans med Henriks härliga familj."
+            content="Första gången Rebecca besökte ön var 2017 eller kanske 2018? Det var i alla fall den sommaren då Henrik råkade ut för salmonella efter en tveksam kycklingsmörgås inköpt på en bensinstation i Portugal (rekommenderas inte!). Vi flög direkt från Portugal till Koster och Henrik låg däckad, likblek och utslagen i över en vecka."
             content2="När Henrik äntligen piggnade till fick vi upptäcka den magiska ön tillsammans. Bilden ni ser här ovan är faktiskt från vår första resa till Koster, när Henrik var tillbaka på fötter. Trots den lite kaotiska starten har vi återvänt nästan varje år sedan dess."
             action1={{
               label: "Kommer du? OSA!",
