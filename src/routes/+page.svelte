@@ -109,7 +109,7 @@
             content2="När Henrik äntligen piggnade till fick vi upptäcka den magiska ön tillsammans. Bilden ni ser här ovan är faktiskt från vår första resa till Koster, när Henrik var tillbaka på fötter. Trots den lite kaotiska starten har vi återvänt nästan varje år sedan dess."
             action1={{
               label: "Kommer du? OSA!",
-              url: "/faq",
+              url: "/osa",
               className: "button-link light",
             }}
           />
