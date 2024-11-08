@@ -140,7 +140,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~13:00 (Preliminär tid)"
+                subtitle="~13:00 (preliminär tid)"
                 title="Vigsel i Kosters Kyrka"
                 content="Nu händer det – vi säger ja till varandra i den vackra Kosters Kyrka som ligger 2 km från Ekenäs Havshotell. Med kärlek i luften och en och annan glädjetår (solglasögon och näsdukar kan vara bra att ha), blir vi herr och fru Momats Norén. Det är ögonblicket då vi officiellt delar allt – från Netflix-lösenord till vardagsäventyr. Missa inte det!"
                 action1={{
@@ -167,8 +167,8 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~15:00 (Preliminär tid)"
-                title="Migel och Bröllopsmiddag"
+                subtitle="~15:00 (preliminär tid)"
+                title="Mingel och Bröllopsmiddag"
                 content="Efter vigseln återsamlas vi på Ekenäs Havshotell för mingel, foton och lite snacks. Vi ska göra vårt bästa för att hålla oss snygga för alla bilder. Och glöm inte att ladda mobilen – vi har en fotograf, men vi vill också se dagen genom era ögon"
                 content2="Sedan är det dags för kvällens höjdpunkt – bröllopsmiddagen! Vi ser fram emot att njuta av en god måltid tillsammans med er, fylld av skratt, tal (ja, några fler tårar kanske också) och självklart massa kärlek. När middagen är avklarad väntar en kväll med dans och fest – så spara lite energi för dansgolvet!"
                 action1={{
@@ -204,7 +204,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~21:00 (Preliminär tid)"
+                subtitle="~21:00 (preliminär tid)"
                 title="Bröllopsfest"
                 content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång."
               />
