@@ -60,37 +60,43 @@
   .scrolling-text-container {
     height: 40px;
     background-color: var(--blue);
-    overflow: hidden; /* Döljer text utanför området */
+    overflow: hidden;
     position: relative;
     display: flex;
-    align-items: center; /* Centrera texten vertikalt */
+    align-items: center;
   }
 
   .scrolling-text {
-    display: flex; /* Arrangera spans i rad */
-    gap: 200px; /* Mellanrum mellan spans */
-    animation: scroll-left 120s linear infinite; /* Kontinuerlig animation */
-    animation-play-state: running; /* Standard är att animationen körs */
+    display: flex;
+    gap: 200px;
+    animation: scroll-left 120s linear infinite;
+    animation-play-state: running;
   }
 
   .scrolling-text:hover {
-    animation-play-state: paused; /* Pausar animationen vid hover */
+    animation-play-state: paused;
   }
 
   .scrolling-text span {
     font-size: 14px;
     color: var(--yellow);
-    white-space: nowrap; /* Förhindrar radbrytning */
-    letter-spacing: 1px; /* Mellanrum mellan bokstäver */
+    white-space: nowrap;
+    letter-spacing: 1px;
     text-transform: uppercase;
   }
 
   @keyframes scroll-left {
     from {
-      transform: translateX(0); /* Startposition */
+      transform: translateX(0);
     }
     to {
-      transform: translateX(-100%); /* Flytta texten åt vänster */
+      transform: translateX(-100%);
+    }
+  }
+
+  @media only screen and (max-width: 799px) {
+    .scrolling-text {
+      gap: 64px; /* Mellanrum mellan spans */
     }
   }
 </style>
