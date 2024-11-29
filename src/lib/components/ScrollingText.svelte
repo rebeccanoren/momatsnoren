@@ -5,6 +5,19 @@
   <a href="/faq?accordion=hotel-booking">
     <div class="scrolling-text-container">
       <div class="scrolling-text">
+        <span> Läs mer om hur du bokar hotell! </span>
+
+        <span> Hur funkar det med hotell? Läs mer här! </span>
+
+        <span>
+          Boka ditt hotellrum i god tid – klicka här för att läsa hur du gör
+        </span>
+
+        <span>
+          Vill du vara först med att boka boende? Läs allt om hur du fixar
+          hotellrummet här
+        </span>
+
         <span>
           Vill du veta hur man bokar hotell? Vi har samlat all info här – så är
           du redo långt innan någon annan!
@@ -29,9 +42,7 @@
           Vill du undvika sista minuten-stress? Läs här hur du bokar ditt
           hotellrum redan nu
         </span>
-        <span>
-          Boka ditt hotellrum i god tid – klicka här för att läsa hur du gör
-        </span>
+
         <span>
           Allt om hur du bokar hotellrummet, så du slipper stressa senare – läs
           mer här
@@ -39,10 +50,6 @@
         <span>
           Vi vet att du är ute i god tid – klicka här för att läsa om hur du
           bokar hotell
-        </span>
-        <span>
-          Vill du vara först med att boka boende? Läs allt om hur du fixar
-          hotellrummet här
         </span>
       </div>
     </div></a
