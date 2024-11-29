@@ -172,7 +172,7 @@
     }
 
     nav h1 {
-      margin-top: 8px;
+      margin-top: 24px;
     }
 
     nav p {

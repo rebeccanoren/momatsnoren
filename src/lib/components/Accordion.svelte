@@ -49,16 +49,16 @@
         <p>{responsePrimary}</p>
       {/if}
 
+      {#if responseSecondary}
+        <p>{responseSecondary}</p>
+      {/if}
+
       {#if listItems.length > 0}
         <ul>
           {#each listItems as item}
             <li>{item}</li>
           {/each}
         </ul>
-      {/if}
-
-      {#if responseSecondary}
-        <p>{responseSecondary}</p>
       {/if}
 
       {#if Action}

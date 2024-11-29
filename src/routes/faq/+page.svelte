@@ -42,21 +42,11 @@
         </div>
         <div class="accordions">
           <Accordion
-            Question="Hur tar man sig till Koster?"
-            responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställe så ni inte missar något."
-            Action={{
-              label: "Läs mer om hur man reser till Koster",
-              url: "/koster",
-              className: "button-link outline",
-              isDarkBackground: true,
-            }}
-            keyword="hotel-booking"
-            expanded={keywordToOpen === "travel"}
-          ></Accordion>
-          <Accordion
             Question="Hur bokar vi hotellrum?"
-            responsePrimary="Du bokar ditt rum enkelt via Ekenäs Havshotells hemsida. Vi har en bokningskod på gång från hotellet, så fort vi fått den kommer du att hitta den här."
-            responseSecondary="Om ni inte vill vänta med att boka kan du också mejla hotellet: bokning@ekenashavshotell.se. Skriv 'Henrik och Rebeccas bröllop' i ämnesraden och ange följande information: 1)  Vilket rum ni vill boka 2) Antal personer 3) Antal nätter inklusive ankomstdag."
+            responsePrimary="Inom kort kommer du kunna boka ditt rum via Ekenäs Havshotells hemsida. Vi väntar på en bokningskod från hotellet och så fort vi fått den hittar du den här. Kom ihåg att ni själva ansvarar för att boka ert boende. Vi rekommenderar varmt att bo på Ekenäs Havshotell – det är ju där alla festligheter kommer äga rum!
+
+Vill ni kika på andra boendealternativ? Då rekommenderar vi att välja något inom gångavstånd till Ekenäs på Sydkoster, så ni slipper missa något av helgens roligheter."
+            responseSecondary="Vill du boka redan nu? Om ni inte vill vänta med att boka kan du också mejla hotellet: bokning@ekenashavshotell.se. Skriv 'Henrik och Rebeccas bröllop' i ämnesraden och ange följande information: 1)  Vilket rum ni vill boka 2) Antal personer 3) Antal nätter inklusive ankomstdag. Här är rummen som finns att välja mellan:"
             listItems={[
               "Dubbelrum Superior, havsutsikt (24st) 2995:-/natt",
               "Dubbelrum Ekelunden, nybyggda (6st) 2995:-/natt",
@@ -74,6 +64,18 @@
             keyword="hotel-booking"
             expanded={keywordToOpen === "hotel-booking"}
           />
+          <Accordion
+            Question="Hur tar man sig till Koster?"
+            responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställe så ni inte missar något."
+            Action={{
+              label: "Läs mer om hur man reser till Koster",
+              url: "/koster",
+              className: "button-link outline",
+              isDarkBackground: true,
+            }}
+            keyword="hotel-booking"
+            expanded={keywordToOpen === "travel"}
+          ></Accordion>
 
           <Accordion
             Question="Vad är dresscoden?"

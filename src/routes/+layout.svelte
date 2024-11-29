@@ -10,22 +10,7 @@
   import { onNavigate } from "$app/navigation";
   import { goto } from "$app/navigation"; // SvelteKit's built-in navigation
   import { page } from "$app/stores";
-
-  // onMount(() => {
-  //   document.addEventListener("mouseover", handleHover); // Add a global hover event listener
-
-  //   return () => {
-  //     document.removeEventListener("mouseover", handleHover); // Clean up on component unmount
-  //   };
-  // });
-
-  // function handleHover(event) {
-  //   const target = event.target.closest("a, button");
-
-  //   if (target) {
-  //     playHoverSound(); // Play the sound on hover
-  //   }
-  // }
+  import ScrollingText from "$lib/components/ScrollingText.svelte";
 
   function navigateToOSA() {
     goto("/osa"); // Navigate to the "/osa" route
@@ -54,6 +39,8 @@
 <svelte:window bind:scrollY={y} bind:innerWidth />
 
 <div class="primary app-container">
+  <ScrollingText />
+
   {#if $page.url.pathname !== "/osa"}
     <div>
       {#if innerWidth > 500}
