@@ -52,7 +52,7 @@
 <style>
   .scrolling-text-container {
     height: 40px;
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
     overflow: hidden; /* Döljer text utanför området */
     position: relative;
     display: flex;
@@ -71,7 +71,7 @@
   }
 
   .scrolling-text span {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--yellow);
     white-space: nowrap; /* Förhindrar radbrytning */
     letter-spacing: 1px; /* Mellanrum mellan bokstäver */
