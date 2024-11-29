@@ -65,6 +65,10 @@ Vill ni kika på andra boendealternativ? Då rekommenderar vi att välja något 
             expanded={keywordToOpen === "hotel-booking"}
           />
           <Accordion
+            Question="Vem gäller inbjudan för?"
+            responsePrimary="Inbjudan är till dig och din partner om du har en. Om du funderar på att ta med någon vi inte hunnit träffa än får du gärna höra av dig. Vi vill gärna veta vilka vi ska fira dagen med och ser fram emot att skåla med er!"
+          />
+          <Accordion
             Question="Hur tar man sig till Koster?"
             responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställe så ni inte missar något."
             Action={{
