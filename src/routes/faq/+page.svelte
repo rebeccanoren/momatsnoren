@@ -55,9 +55,8 @@
           ></Accordion>
           <Accordion
             Question="Hur bokar vi hotellrum?"
-            responsePrimary="Du bokar ditt rum enkelt via Ekenäs Havshotells hemsida. Vi har en bokningskod på gång från hotellet, så fort vi fått den kommer du att hitta den här.
-          
-          Dessa rummen finns att välja på:"
+            responsePrimary="Du bokar ditt rum enkelt via Ekenäs Havshotells hemsida. Vi har en bokningskod på gång från hotellet, så fort vi fått den kommer du att hitta den här."
+            responseSecondary="Om ni inte vill vänta med att boka kan du också mejla hotellet: bokning@ekenashavshotell.se. Skriv 'Henrik och Rebeccas bröllop' i ämnesraden och ange följande information: 1)  Vilket rum ni vill boka 2) Antal personer 3) Antal nätter inklusive ankomstdag."
             listItems={[
               "Dubbelrum Superior, havsutsikt (24st) 2995:-/natt",
               "Dubbelrum Ekelunden, nybyggda (6st) 2995:-/natt",
@@ -67,7 +66,7 @@
               "Enkelrum (6st) 1695:-/natt",
             ]}
             Action={{
-              label: "Boka hotellrum",
+              label: "Läs mer om de olika rummen",
               url: "https://www.ekenashavshotell.se/hotellet",
               className: "button-link outline",
               isDarkBackground: true,
