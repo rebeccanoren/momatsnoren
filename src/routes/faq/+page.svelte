@@ -43,10 +43,8 @@
         <div class="accordions">
           <Accordion
             Question="Hur bokar vi hotellrum?"
-            responsePrimary="Inom kort kommer du kunna boka ditt rum via Ekenäs Havshotells hemsida. Vi väntar på en bokningskod från hotellet och så fort vi fått den hittar du den här. Kom ihåg att ni själva ansvarar för att boka ert boende. Vi rekommenderar varmt att bo på Ekenäs Havshotell – det är ju där alla festligheter kommer äga rum!
-
-Vill ni kika på andra boendealternativ? Då rekommenderar vi att välja något inom gångavstånd till Ekenäs på Sydkoster, så ni slipper missa något av helgens roligheter."
-            responseSecondary="Vill du boka redan nu? Om ni inte vill vänta med att boka kan du också mejla hotellet: bokning@ekenashavshotell.se. Skriv 'Henrik och Rebeccas bröllop' i ämnesraden och ange följande information: 1)  Vilket rum ni vill boka 2) Antal personer 3) Antal nätter inklusive ankomstdag. Här är rummen som finns att välja mellan:"
+            responsePrimary="Vi rekommenderar varmt att bo på Ekenäs Havshotell – det är där festligheterna äger rum och det är helt klart smidigast att bo på plats. Vill ni kika på andra alternativ? Då är vårt tips att hålla er inom gångavstånd till Ekenäs på Sydkoster, så ni slipper missa något av helgens roligheter."
+            responseSecondary="För att boka rum på Ekenäs behöver ni mejla hotellet direkt: bokning@ekenashavshotell.se. Skriv 'Henrik och Rebeccas bröllop' i ämnesraden och ange följande information: 1)  Vilket rum ni vill boka 2) Antal personer 3) Antal nätter inklusive ankomstdag. Hotellet kommer att svara så fort de hinner. Ni får ett autogenererat mejl direkt – oroa er inte, det riktiga svaret kommer inom kort! Här är rummen som finns att välja mellan:"
             listItems={[
               "Dubbelrum Superior, havsutsikt (24st) 2995:-/natt",
               "Dubbelrum Ekelunden, nybyggda (6st) 2995:-/natt",
@@ -83,7 +81,7 @@ Vill ni kika på andra boendealternativ? Då rekommenderar vi att välja något 
 
           <Accordion
             Question="Vad är dresscoden?"
-            responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festlit. Gärna färgglatt som är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
+            responsePrimary="Vi kör på somrig elegans – tänk klänning, kostym eller något festligt. Gärna färgglatt som är bekvämt för en dag vid havet. Ta gärna med något extra varmt och ett paraflax om det skulle blåsa upp eller komma en skur (det är trots allt västkusten!)"
           ></Accordion>
           <Accordion
             Question="Kommer det finnas särskilda matalternativ?"
