@@ -83,7 +83,7 @@
             className="salmon"
             title="Varför Koster?"
             content="Det är en plats som är svår att beskriva utan att låta som en turistbroschyr – naturreservat mitt i havet, fantastiska vyer och en känsla av lugn som är svår att hitta någon annanstans. Bara en sådan sak!"
-            content2="Henriks familj har en särskild relation till Koster. I ungefär 50 år har de hyrt samma stuga, en riktig pärla utan vare sig toalett eller varmvatten. Här snackar vi att leva nära naturen på riktigt – duscha i havet och göra det bästa av situationen. Men det är just det som gör Koster så magiskt. Det är en plats där havsbrisen är det enda man behöver bry sig om."
+            content2="Henriks familj har en särskild relation till Koster. I ungefär 50 år har de hyrt samma stuga, en riktig pärla utan vare sig toalett eller varmvatten. Här snackar vi att leva nära naturen på riktigt – tvätta sig i havet och göra det bästa av situationen. Men det är just det som gör Koster så magiskt. Det är en plats där havsbrisen är det enda man behöver bry sig om."
             content3="Och eftersom Rebecca är från västkusten blev det en självklarhet. (Okej, hon hade en kort dröm om att gifta sig på en vingård i Frankrike men den skrotades rätt snabbt) När det var dags att välja plats för vårt bröllop fanns det bara ett alternativ. Koster är vår plats."
           />
         </div>
