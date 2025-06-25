@@ -63,9 +63,13 @@
             expanded={keywordToOpen === "hotel-booking"}
           />
           <Accordion
-            Question="Vem gäller inbjudan för?"
-            responsePrimary="Inbjudan är till dig och din partner om du har en. Om du funderar på att ta med någon vi inte hunnit träffa än får du gärna höra av dig. Vi vill gärna veta vilka vi ska fira dagen med och ser fram emot att skåla med er!"
-          />
+            Question="Vad gäller om jag vill hålla ett tal?"
+            responsePrimary="Vill du hålla tal? Vad kul!
+Börja fila på dina bästa stories – nu har vi instruktionerna på plats! Hör av dig till vår fantastiska toast madame Rebecka Gärderup på rgarderup@gmail.com eller +46 70 329 13 54."
+            responseSecondary="Vi uppskattar om du håller dig kortfattad – så alla som vill får plats.
+Skriv gärna några rader om vad du har tänkt dig till Rebecka, så kan hon pussla ihop kvällen på bästa sätt!"
+          ></Accordion>
+
           <Accordion
             Question="Hur tar man sig till Koster?"
             responsePrimary="För att komma till Ekenäs på Sydkoster tar ni Kosterbåtarna som går från Strömstad Norra Hamnen. Vi har samlat all info på ett ställe så ni inte missar något."
@@ -99,8 +103,8 @@
           ></Accordion>
           <Accordion
             Question="Kommer det finnas transport till vigseln och tillbaka?"
-            responsePrimary="Vigseln hålls i Kosters Kyrka och efter ceremonin tar vi oss till Ekenäs Havshotell för mingel och middag. Kyrkan ligger ungefär 2 kilometer från hotellet och en promenad genom det vackra landskapet är nästan en del av upplevelsen. Det finns inga bilar på ön, så cykel eller promenad är det bästa sättet att ta sig runt."
-            responseSecondary="Om det känns svårt att gå, hör av er till oss i förväg så ska vi göra vårt bästa för att lösa skjuts på något sätt – vi vill att alla ska kunna ta sig dit utan problem!"
+            responsePrimary="Vigseln hålls i Kosters Kyrka, och efter ceremonin rör vi oss mot Ekenäs Havshotell för mingel och middag. Kyrkan ligger ungefär 2 kilometer från hotellet, och en promenad genom det vackra landskapet är nästan en del av upplevelsen. Det finns inga bilar på ön – cykel eller promenad är det vanligaste sättet att ta sig runt."
+            responseSecondary="Vi är omkring 65 gäster och har bokat Kostertåget som kan ta upp till 45 passagerare. Om du kan tänka dig att promenera är det toppen – då räcker skjutsen till dem som behöver den allra mest. Och om du vet att det blir svårt att gå, hör gärna av dig i förväg så ser vi till att du kommer fram utan problem."
           ></Accordion>
           <Accordion
             Question="Vad händer om det regnar?"
@@ -108,9 +112,9 @@
             responseSecondary="Men eftersom vi ändå kommer behöva röra oss mellan olika platser utomhus (och vädret kan skifta snabbt på Koster), rekommenderar vi att ni tar med er ett paraply och kanske en regnjacka. Vi vill att ni ska kunna njuta av helgen oavsett väder. Med ett paraply i handen blir även en regnskur lite mysigare!"
           ></Accordion>
           <Accordion
-            Question="Vad gäller om jag vill hålla ett tal?"
-            responsePrimary="Vill du hålla tal? Vad kul! Vi kommer snart uppdatera med mer info om hur du anmäler dig här på sajten – börja fila på dina bästa stories så länge!"
-          ></Accordion>
+            Question="Vem gäller inbjudan för?"
+            responsePrimary="Inbjudan är till dig och din partner om du har en. Om du funderar på att ta med någon vi inte hunnit träffa än får du gärna höra av dig. Vi vill gärna veta vilka vi ska fira dagen med och ser fram emot att skåla med er!"
+          />
           <Accordion
             Question="Vad gör vi om vi vill stanna längre än bröllopshelgen?"
             responsePrimary="Om ni vill stanna lite längre och utforska mer av Kosteröarna – då har ni gjort ett bra val! Både Sydkoster och Nordkoster är små nog för att hinna med båda under samma resa. De förbinds med en linfärja, så det är enkelt att ta sig mellan öarna."

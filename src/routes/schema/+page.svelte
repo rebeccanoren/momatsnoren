@@ -140,7 +140,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~13:00 (preliminär tid)"
+                subtitle="13:30"
                 title="Vigsel i Kosters Kyrka"
                 content="Nu händer det – vi säger ja till varandra i den vackra Kosters Kyrka som ligger 2 km från Ekenäs Havshotell. Med kärlek i luften och en och annan glädjetår (solglasögon och näsdukar kan vara bra att ha), blir vi herr och fru Momats Norén. Det är ögonblicket då vi officiellt delar allt – från Netflix-lösenord till vardagsäventyr. Missa inte det!"
                 action1={{

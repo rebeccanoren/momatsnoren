@@ -2,55 +2,35 @@
 </script>
 
 <div>
-  <a href="/faq?accordion=hotel-booking">
+  <a href="/faq">
     <div class="scrolling-text-container">
       <div class="scrolling-text">
-        <span> Läs mer om hur du bokar hotell! </span>
+        <span>Snart smäller det! Hitta svar på vanliga frågor här!</span>
+        <span
+          >Vi längtar efter att fira med er! Tills dess – allt ni behöver veta
+          finns här</span
+        >
+        <span
+          >Funderar du på att hålla tal? Kul! Läs mer om hur du anmäler dig!</span
+        >
+        <span
+          >Undrar du något? Kika in på vanliga frågor – vi har svar på det
+          mesta!</span
+        >
+        <span>Mejlat hotellet? Lugnt – de skickar snart en bekräftelse!</span>
+        <span
+          >Hotellbokning på gång? Bekräftelse kommer direkt från Ekenäs – håll
+          utkik!</span
+        >
 
-        <span> Hur funkar det med hotell? Läs mer här! </span>
-
-        <span>
-          Boka ditt hotellrum i god tid – klicka här för att läsa hur du gör
-        </span>
-
-        <span>
-          Vill du vara först med att boka boende? Läs allt om hur du fixar
-          hotellrummet här
-        </span>
-
-        <span>
-          Vill du veta hur man bokar hotell? Vi har samlat all info här – så är
-          du redo långt innan någon annan!
-        </span>
-        <span>
-          Nyfiken på hur du bokar hotell? Klicka här och säkra ditt rum i god
-          tid!
-        </span>
-        <span>
-          Se till att boka hotellrummet tidigt – här hittar du all information
-          du behöver
-        </span>
-        <span>
-          Redo att fixa ditt boende? Klicka här för att läsa hur du bokar hotell
-          i tid!
-        </span>
-        <span>
-          Planera smart och boka hotell tidigt – vi har gjort det enkelt för dig
-          här!
-        </span>
-        <span>
-          Vill du undvika sista minuten-stress? Läs här hur du bokar ditt
-          hotellrum redan nu
-        </span>
-
-        <span>
-          Allt om hur du bokar hotellrummet, så du slipper stressa senare – läs
-          mer här
-        </span>
-        <span>
-          Vi vet att du är ute i god tid – klicka här för att läsa om hur du
-          bokar hotell
-        </span>
+        <span
+          >Vill du hålla tal? Börja fila på något fint – här är info om anmälan</span
+        >
+        <span>Vad händer om det regnar? Det löser vi – men ta med paraply!</span
+        >
+        <span
+          >Väder, tal, hotell och allt däremellan – kika på vanliga frågor!</span
+        >
       </div>
     </div></a
   >
