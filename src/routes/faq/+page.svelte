@@ -95,7 +95,7 @@ Skriv gärna några rader om vad du har tänkt dig till Rebecka, så kan hon pus
           <Accordion
             Question="Hur är det med bröllopsgåvor?"
             responsePrimary="Vi uppskattar verkligen tanken, men vi vill vara tydliga: vi önskar oss inga fysiska gåvor. Att ni är med oss och firar på Koster är allt vi behöver! Eftersom vi kommer att vara på en ö, och låt oss vara ärliga – att frakta en brödrost eller en kristallvas över havet är inte direkt något vi vill utsätta er för, så det kan bli lite knepigt med transport och logistik."
-            responseSecondary="Men om ni ändå vill ge något, har vi allt vi behöver hemma (utom möjligen ett större förråd för alla Henriks verktyg…). Ett bidrag till vår framtida resa skulle därför vara väldigt uppskattat. Vår fantastiska brudtärna Natalie kommer att administrera Swish-gåvorna. Ni kan swisha ert bidrag till henne på 0730542754."
+            responseSecondary="Men om du ändå vill ge något, blir vi väldigt glada för ett bidrag till vår smekmånad. I vår siktar vi på att åka till Japan – en drömresa fylld av ramen, öl, varma källor och äventyr. Vi ser fram emot att uppleva allt från Tokyos neon till Kyotos stillhet. Och Henrik är särskilt nyfiken på hur mycket uppmärksamhet han kommer få som nästan två meter lång och långhårig svensk – vi misstänker att han kommer sticka ut lite i Tokyos tunnelbana. Vår fantastiska brudtärna Natalie tar emot Swish-bidrag på 073-054 27 54. Tack snälla!"
           ></Accordion>
           <Accordion
             Question="Kan vi ta med barn?"
