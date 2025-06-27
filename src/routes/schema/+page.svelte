@@ -167,15 +167,10 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~15:00 (preliminär tid)"
+                subtitle="~15:30"
                 title="Mingel och Bröllopsmiddag"
                 content="Efter vigseln återsamlas vi på Ekenäs Havshotell för mingel, foton och lite snacks. Vi ska göra vårt bästa för att hålla oss snygga för alla bilder. Och glöm inte att ladda mobilen – vi har en fotograf, men vi vill också se dagen genom era ögon"
                 content2="Sedan är det dags för kvällens höjdpunkt – bröllopsmiddagen! Vi ser fram emot att njuta av en god måltid tillsammans med er, fylld av skratt, tal (ja, några fler tårar kanske också) och självklart massa kärlek. När middagen är avklarad väntar en kväll med dans och fest – så spara lite energi för dansgolvet!"
-                action1={{
-                  label: "Kosters Kyrka på Google Maps",
-                  url: "https://maps.app.goo.gl/2pTWLy7tKUA8wb7s8",
-                  className: "button-link external-button light",
-                }}
               />
             </div>
           </div>
@@ -204,7 +199,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~21:00 (preliminär tid)"
+                subtitle="~21:00"
                 title="Bröllopsfest"
                 content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång."
               />
