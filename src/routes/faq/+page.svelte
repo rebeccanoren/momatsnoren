@@ -103,7 +103,7 @@ Skriv gärna några rader om vad du har tänkt dig till Rebecka, så kan hon pus
           ></Accordion>
           <Accordion
             Question="Kommer det finnas transport till vigseln och tillbaka?"
-            responsePrimary="JA! Vigseln äger rum i Kosters Kyrka, ungefär två kilometer från Ekenäs Havshotell där vi senare minglar och äter middag. Ön är bilfri, så det är vanligt att ta sig fram till fots eller med cykel – men vi har såklart ordnat transport! Kostertåget kör alla 66 gäster i två omgångar tur och retur. Bara att luta sig tillbaka och njuta av färden genom det vackra landskapet."
+            responsePrimary="JA! Vigseln äger rum i Kosters Kyrka, ungefär två kilometer från Ekenäs Havshotell där vi senare minglar och äter middag. Ön är bilfri, så det är vanligt att ta sig fram till fots eller med cykel – men vi har såklart ordnat transport! Kostertåget kör alla 63 gäster i två omgångar tur och retur. Bara att luta sig tillbaka och njuta av färden genom det vackra landskapet."
           ></Accordion>
           <Accordion
             Question="Vad händer om det regnar?"

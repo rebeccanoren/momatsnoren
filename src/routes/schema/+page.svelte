@@ -192,16 +192,21 @@
           <div class="content content-overlap-small beige-background">
             <div class="content-illustration">
               <FlyingImage
-                src="kostersrokeri.png"
-                alt="Kosters Rökeri"
+                src="ekenas.png"
+                alt="Ekenäs Havshotell"
                 imageClass="illustration"
               />
             </div>
             <div class="text-wrapper">
               <AnimatedText
                 subtitle="~21:00"
-                title="Bröllopsfest"
-                content="Då blir det fest på Kosters Rökeri! Här var vi ju på fredagen, men den här gången blir det en helt annan nivå – med musik, dans och firande långt in på natten. Oavsett om ni är på dansgolvet eller bara njuter av atmosfären, så lovar vi en kväll att minnas. Så snöra på er dansskorna – nu drar festen igång."
+                title="Nu blir det fest!"
+                content="När sista tuggorna är tagna och talen klingat ut, glider vi sömlöst in i festläge här på Ekenäs.
+Vi snackar musik, dans, skratt och firande långt in på småtimmarna. Oavsett om du kör all in på dansgolvet eller sippar bubbel i goda vänners lag, så blir det en kväll att minnas.
+
+Snöra på dig dansskorna, släpp loss och låt festen börja. Vi ses där – glittriga, glada och lite extra kära i livet.
+
+"
               />
             </div>
           </div>
