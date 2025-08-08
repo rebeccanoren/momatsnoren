@@ -88,7 +88,7 @@
             </div>
             <div class="text-wrapper">
               <AnimatedText
-                subtitle="~20:30"
+                subtitle="~20:00"
                 title="Middag på Kosters Rökeri"
                 content="Fredagsmiddagen är på oss. Vi har bord på Kosters Rökeri, 
                 ett ställe vi älskar och där vi har beställt deras signaturrätt: baguetter fyllda med skagenröra. 
